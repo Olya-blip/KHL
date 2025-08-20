@@ -1,24 +1,23 @@
 @import "_colors.less";
+@import "_base.less";
 
 .banner {
     margin-bottom: 70px;
+    width: 100%;
 }
 
 .history {
     margin-bottom: 70px;
 
     .history-center {
-        display: flex;
-        flex-direction: column;
+        .flex-column();
         gap: 40px;
         align-items: center;
         margin-bottom: 30px;
 
         .title {
             color: #fff;
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 100%;
+            .text-large-title();
         }
 
         .links {
@@ -74,15 +73,13 @@
             padding: 15px;
             background-color: @Special-White10;
             border-radius: 4px;
-            display: flex;
-            flex-direction: column;
+            .flex-column();
             gap: 10px;
             text-decoration: none;
 
 
             .history-card-top {
-                display: flex;
-                flex-direction: column;
+                .flex-column();
                 gap: 10px;
 
                 .text {
@@ -94,8 +91,7 @@
             }
 
             .history-card-bottom {
-                display: flex;
-                flex-direction: column;
+                .flex-column();
                 gap: 10px;
                 align-items: start;
                 margin-top: auto;
@@ -103,7 +99,7 @@
                 .years {
                     font-weight: 700;
                     font-size: 18px;
-                    line-height: 110.00000000000001%;
+                    line-height: 110%;
                     color: @Widget-grey;
                 }
 
@@ -133,9 +129,7 @@
             margin-bottom: 44px;
 
             .text-match {
-                font-weight: 700;
-                font-size: 40px;
-                line-height: 100%;
+                .text-large-title();
                 text-align: center;
                 color: @Netspace;
             }
@@ -144,7 +138,7 @@
         .match-cards {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            grid-gap: 10px;
+            gap: 10px;
 
             .match-card {
                 padding: 20px 13px;
@@ -167,23 +161,18 @@
 
                 &:hover {
                     color: @light-white;
+                    border: 1px solid @blue;
+                    background-color: @Special-White85;
                 }
 
                 &:hover::after {
                     border-color: @blue;
                 }
 
-                &:hover {
-                    border: 1px solid @blue;
-                    background-color: @Special-White85;
-                }
-
                 .match-card-data {
                     .text-data {
                         color: @blue;
-                        font-weight: 700;
-                        font-size: 18px;
-                        line-height: 120%;
+                        font: 700 18px/120%;
                         text-align: center;
                         margin-bottom: 13px;
                     }
@@ -191,94 +180,11 @@
 
                 .match-card-teams {
                     display: flex;
-                    gap: 28px;
-                    align-items: center;
                     justify-content: center;
+                    align-items: center;
+                    gap: 28px;
 
-                    .match-card-left {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 7px;
-                        align-items: center;
-
-                        .team-image {
-                            width: 46px;
-                            height: 46px;
-                            background-color: #F4F4F4;
-                            border-radius: 50%;
-                            padding: 3px;
-                        }
-
-                        .text-team {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 4px;
-
-                            .team-name {
-                                color: @black;
-                                font-weight: 700;
-                                font-size: 12px;
-                                line-height: 100%;
-                                text-align: center;
-                                min-width: 89px;
-                            }
-
-                            .team-city {
-                                color: @Silver-gray;
-                                font-weight: 700;
-                                font-size: 10px;
-                                line-height: 100%;
-                                text-align: center;
-                            }
-                        }
-                    }
-
-                    .match-card-center {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 12px;
-
-                        .score-top {
-                            display: flex;
-                            gap: 12px;
-                            justify-content: center;
-
-                            .one {
-                                color: @black;
-                                font-weight: 700;
-                                font-size: 26px;
-                                line-height: 120%;
-                            }
-
-                            .center {
-                                color: @black;
-                                font-weight: 700;
-                                font-size: 26px;
-                                line-height: 120%;
-                            }
-
-                            .two {
-                                color: @black;
-                                font-weight: 700;
-                                font-size: 26px;
-                                line-height: 120%;
-                            }
-                        }
-
-                        .score-bottom {
-                            display: flex;
-                            gap: 6px;
-                            align-items: center;
-
-                            .score {
-                                color: @Silver-gray;
-                                font-weight: 700;
-                                font-size: 12px;
-                                line-height: 100%;
-                            }
-                        }
-                    }
-
+                    .match-card-left,
                     .match-card-right {
                         display: flex;
                         flex-direction: column;
@@ -298,20 +204,46 @@
                             flex-direction: column;
                             gap: 4px;
 
-                            .team-name {
-                                color: @black;
-                                font-weight: 700;
-                                font-size: 12px;
-                                line-height: 100%;
+                            .team-name,
+                            .team-city {
+                                font: 700 12px/100%;
                                 text-align: center;
                             }
 
                             .team-city {
                                 color: @Silver-gray;
-                                font-weight: 700;
                                 font-size: 10px;
-                                line-height: 100%;
-                                text-align: center;
+                            }
+                        }
+                    }
+
+                    .match-card-center {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        .score-top {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 12px;
+
+                            .one,
+                            .center,
+                            .two {
+                                color: @black;
+                                font: 700 26px/120%;
+                            }
+                        }
+
+                        .score-bottom {
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+
+                            .score {
+                                color: @Silver-gray;
+                                font: 700 12px/100%;
                             }
                         }
                     }
@@ -326,9 +258,7 @@
     }
 
     .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .flex-center();
         flex-direction: column;
         width: 100%;
         height: 100%;
@@ -337,17 +267,38 @@
 }
 
 
-@media (max-width:1199px) {
+// @media (max-width:1199px) {
 
-    .history .history-cards {
-        background: none;
-        grid-template-columns: repeat(3, 1fr);
-    }
+//     .history .history-cards {
+//         background: none;
+//         grid-template-columns: repeat(3, 1fr);
+//     }
 
-    .history .match .match-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+//     .history .match .match-cards {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-gap: 10px;
+//     }
+
+//     .banner {
+//         margin-bottom: 40px;
+//     }
+// }
+
+@media (max-width: 1199px) {
+    .history {
+        .history-cards {
+            background: none;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .match {
+            .match-cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+            }
+        }
     }
 
     .banner {
@@ -355,61 +306,129 @@
     }
 }
 
+// @media (max-width:767px) {
 
-@media (max-width:767px) {
+//     .history .history-center .title {
+//         font-weight: 700;
+//         font-size: 28px;
+//         line-height: 100%;
+//         letter-spacing: 0%;
+//         text-align: center;
+//     }
 
-    .history .history-center .title {
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-align: center;
-    }
+//     .history .history-cards {
+//         grid-template-columns: 1fr;
+//         justify-items: center;
+//         padding: 0;
+//         margin-bottom: 50px;
+//     }
 
-    .history .history-cards {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        padding: 0;
-        margin-bottom: 50px;
-    }
+//     .history .match .match-cards {
+//         display: none;
+//     }
 
-    .history .match .match-cards {
-        display: none;
-    }
+//     .history,
+//     .history .match .match-cards .match-card .match-card-data .text-data {
+//         margin-bottom: 0;
+//     }
 
-    .history,
-    .history .match .match-cards .match-card .match-card-data .text-data {
-        margin-bottom: 0;
-    }
+//     .history .history-center .links .link {
+//         padding: 10px;
+//     }
 
-    .history .history-center .links .link {
-        padding: 10px;
-    }
+//     .history .history-cards .history-card {
+//         width: 100%;
+//         max-width: 404px;
+//     }
 
-    .history .history-cards .history-card {
-        width: 100%;
-        max-width: 404px;
-    }
+//     .history .match .match-top .text-match {
+//         margin-bottom: 24px;
+//     }
 
-    .history .match .match-top .text-match {
-        margin-bottom: 24px;
-    }
+//     .history .match .match-top .text-match {
+//         font-size: 28px;
+//     }
 
-    .history .match .match-top .text-match {
-        font-size: 28px;
-    }
+//     .history .match .match-cards .match-card .match-card-teams {
+//         gap: 8px;
+//     }
 
-    .history .match .match-cards .match-card .match-card-teams {
-        gap: 8px;
-    }
+//     .history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .center,
+//     .history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .one,
+//     .history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .two {
+//         font-size: 18px;
+//     }
 
-    .history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .center,
-    .history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .one,
-    .history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .two {
-        font-size: 18px;
-    }
+//     .history .match .match-cards .match-card .match-card-teams .match-card-center .score-bottom .score {
+//         font-size: 9px;
+//     }
+// }
 
-    .history .match .match-cards .match-card .match-card-teams .match-card-center .score-bottom .score {
-        font-size: 9px;
+@media (max-width: 767px) {
+
+    .history {
+        .history-center {
+            .title {
+                font: 700 28px/100%;
+                letter-spacing: 0;
+                text-align: center;
+            }
+
+            .links {
+                .link {
+                    padding: 10px;
+                }
+            }
+        }
+
+        .history-cards {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            padding: 0;
+            margin-bottom: 50px;
+
+            .history-card {
+                width: 100%;
+                max-width: 404px;
+            }
+        }
+
+        .match {
+            .match-cards {
+                display: none;
+            }
+
+            .match-top {
+                .text-match {
+                    font-size: 28px;
+                    margin-bottom: 24px;
+                }
+            }
+
+            .match-cards {
+                .match-card {
+                    .match-card-teams {
+                        gap: 8px;
+
+                        .match-card-center {
+                            .score-top {
+
+                                .center,
+                                .one,
+                                .two {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .score-bottom {
+                                .score {
+                                    font-size: 9px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

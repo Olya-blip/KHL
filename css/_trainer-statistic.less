@@ -1,5 +1,6 @@
 @import "_colors.less";
 @import "_tournament.less";
+@import "_base.less";
 
 .tournament-table {
     .header-image {
@@ -52,9 +53,7 @@
         }
 
         .team {
-            display: flex;
-            justify-content: center;
-            text-align: center;
+            .flex-center();
         }
 
         .header-group {
@@ -89,18 +88,14 @@
     }
 
     .pagination {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .flex-center();
         list-style: none;
         padding: 0;
         margin-top: 20px;
     }
 
     .pagination a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .flex-center();
         width: 40px;
         height: 40px;
         border-radius: 50%;

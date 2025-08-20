@@ -144,9 +144,9 @@
   background: none;
   padding: 11px 22px;
   display: flex;
-  gap: 6px;
   justify-content: center;
   align-items: center;
+  gap: 6px;
   cursor: pointer;
   height: 50%;
   margin-top: auto;
