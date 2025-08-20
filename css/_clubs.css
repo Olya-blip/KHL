@@ -28,17 +28,44 @@
   display: flex;
   gap: 10px;
 }
+.clubs-top .range-selector .selectors .gamers-search {
+  flex: 1;
+}
+.clubs-top .range-selector .selectors .gamers-search .gamers-form-search {
+  position: relative;
+}
+.clubs-top .range-selector .selectors .gamers-search .gamers-form-search .gamers-input-search {
+  padding: 13px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  background: none;
+  color: #fff;
+  width: 100%;
+}
+.clubs-top .range-selector .selectors .gamers-search .gamers-form-search .gamers-icon-search {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 13px;
+  right: 3px;
+  cursor: pointer;
+}
 .clubs-top .range-selector .selectors .select-imit {
   position: relative;
 }
 .clubs-top .range-selector .selectors .select-imit .select-head {
-  padding: 13px 90.5px;
+  padding: 13px 22px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: 0.2s ease-out;
 }

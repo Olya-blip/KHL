@@ -1,0 +1,244 @@
+@import "_colors.less";
+@import "_base.less";
+
+.tournament-table .tournament-table-top {
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  margin-bottom: 28px;
+}
+
+.tournament {
+  .tournament-table {
+    .tournament-table-top--personal {
+      justify-content: center;
+    }
+  }
+}
+
+.range-selector {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  .selectors {
+    display: flex;
+    gap: 10px;
+
+    .select-imit {
+      position: relative;
+
+      .select-head {
+        padding: 13px 22px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.2s ease-out;
+
+        .select-head-selected {
+          margin-right: 6px;
+          font-size: 14px;
+          font-weight: 400;
+          transition: 0.2s ease-out;
+          cursor: pointer;
+        }
+
+        .select-head-icon {
+          display: block;
+          line-height: 0;
+
+          svg {
+            path {
+              transition: .2s ease-out;
+              stroke: rgba(255, 255, 255, 0.2);
+            }
+          }
+        }
+
+        &.active,
+        &:hover {
+          background: #007BFF;
+          border-color: #007BFF;
+
+          .select-head-icon svg path {
+            stroke: #fff;
+          }
+        }
+      }
+
+      .select-list {
+        background: @Grey68;
+        color: #27282A;
+        padding: 10px 0;
+        border-radius: 0 0 4px 4px;
+        display: none;
+        position: absolute;
+        z-index: 4;
+        left: 0;
+        top: 100%;
+        min-width: 100%;
+        max-height: 207px;
+        overflow: auto;
+
+        .select-item {
+          padding: 3px;
+          text-align: center;
+          transition: .2s ease-out;
+          cursor: pointer;
+
+          &:hover {
+            background: #007BFF;
+            color: #fff;
+          }
+        }
+      }
+
+      &:hover {
+        .select-head {
+          &.active {
+            border-radius: 4px 4px 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    gap: 4px;
+  }
+
+  .buttons-wrapper button {
+    padding: 14px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+  }
+
+  #applyBtn {
+    background-color: #fff;
+    color: @black;
+    transition: background-color 0.6s;
+  }
+
+  #resetBtn {
+    transition: background-color 0.6s;
+  }
+
+  #applyBtn:hover {
+    background-color: @blue;
+  }
+
+  #resetBtn:hover {
+    background-color: @Special-White15;
+  }
+}
+
+.top {
+  .topMixin(@Widget-grey, 29px, 0);
+
+  .gamers-search {
+    .gamers-form-search {
+      position: relative;
+
+      .gamers-input-search {
+        padding: 11px 16px;
+        border: 1px solid @Special-DarkGrey;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.2s ease-out;
+        background: none;
+        color: @dark-grey;
+      }
+
+      .gamers-icon-search {
+        border: none;
+        background: none;
+        position: absolute;
+        top: 13px;
+        left: 169px;
+        cursor: pointer;
+        color: @dark-grey;
+      }
+    }
+  }
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.table-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr;
+  min-width: max-content;
+
+  .header {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: @dark-grey;
+    margin-bottom: 30px;
+  }
+
+  .info-gamer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .cell {
+    display: flex;
+    margin-bottom: 26px;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .team {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width:767px) {
+  .top {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .top .gamers-search .gamers-form-search .gamers-icon-search {
+    right: 10px;
+    left: auto;
+  }
+
+  .range-selector {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .range-selector #resetBtn,
+  .range-selector #applyBtn {
+    width: 50%;
+  }
+}

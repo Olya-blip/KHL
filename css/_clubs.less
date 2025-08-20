@@ -1,0 +1,272 @@
+@import "_colors.less";
+@import "_base.less";
+
+.clubs-top {
+    .flex-column();
+    gap: 40px;
+
+    .home {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-decoration: none;
+
+        .text-home {
+            color: @Special-White60;
+        }
+    }
+
+    .title {
+        .text-large-title();
+        text-align: center;
+        color: @Netspace;
+    }
+
+    .range-selector {
+        .rangeSelectorMixin();
+    }
+}
+
+.clubs-cards {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border-radius: 6px;
+    grid-gap: 10px;
+
+    .club-card {
+        text-decoration: none;
+
+        .club-card-input {
+            .flex-column();
+            justify-content: center;
+            align-items: center;
+            background-color: @Special-White20;
+            padding: 18px;
+            border-radius: 6px;
+            position: relative;
+            width: 163px;
+            height: 174px;
+
+            .club-text {
+                .flex-column();
+                gap: 13px;
+                margin-top: 19px;
+
+                .club-name {
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 100%;
+                    text-align: center;
+                }
+
+                .club-city {
+                    color: @Special-White60;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 100%;
+                    text-align: center;
+                }
+
+                &--crystal {
+                    margin-top: 10px;
+                }
+            }
+
+            .info-icon {
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                color: @Special-White60;
+            }
+
+            .club-emblem--cska,
+            .club-emblem--cka,
+            .club-emblem--metallurgist,
+            .club-emblem--dinamo,
+            .club-emblem--burevistnic {
+                background-color: @Pale-grey;
+                border-radius: 50%;
+            }
+
+            .club-card-info {
+                background-color: @Widget-grey;
+                padding: 13px;
+                border-radius: 6px;
+                position: absolute;
+                left: 166px;
+                top: 0px;
+                z-index: -10;
+                width: 173px;
+                min-height: 201px;
+                opacity: 0;
+
+                .club-card-history {
+                    color: @black;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 100%;
+                    margin-bottom: 10px;
+                }
+
+                .border-bottom {
+                    border: 1px solid #AFAFAF66;
+                    margin-bottom: 15px;
+                }
+
+                .club-card-item {
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .club-card-list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+
+                        .data {
+                            color: @Grey68;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 100%;
+                        }
+
+                        .club-name {
+                            color: @black;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .club-card-input:hover {
+            border: 1px solid @blue;
+            background-color: @Special-White10;
+        }
+
+        .club-card-input:hover .info-icon {
+            color: @blue;
+        }
+
+        .club-card-input:hover .club-card-info {
+            opacity: 1;
+            z-index: 10;
+        }
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .img-xs {
+        width: 34px;
+        height: 22px;
+        position: absolute;
+        left: -17px;
+        z-index: 9;
+        top: 4px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .clubs-cards {
+        grid-template-columns: repeat(4, 1fr);
+
+        .club-card {
+            .club-card-input {
+                width: 100%;
+
+                .club-card-info {
+                    left: 289px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .clubs-cards {
+        grid-template-columns: repeat(4, 1fr);
+
+        .club-card {
+            .club-card-input {
+                width: 100%;
+
+                .club-card-info {
+                    left: 226px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .clubs-cards {
+        grid-template-columns: repeat(2, 1fr);
+
+        .club-card {
+            .club-card-input {
+                .club-card-info {
+                    width: 100%;
+                    top: 178px;
+                    left: 0;
+                }
+            }
+
+            .img-xs {
+                top: -10px;
+                left: 150px;
+                rotate: 90deg;
+            }
+        }
+    }
+
+    .clubs-top .range-selector {
+        gap: 130px;
+
+        .selectors {
+            .select-imit {
+                .select-head {
+                    padding: 13px 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .clubs-top .range-selector {
+        flex-wrap: wrap;
+        gap: 0;
+
+        .selectors {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .buttons-wrapper {
+            display: flex;
+            gap: 4px;
+            margin-top: 20px;
+            width: 100%;
+
+            button {
+                width: 50%;
+            }
+        }
+    }
+
+    .clubs-cards {
+        grid-template-columns: 1fr;
+    }
+}

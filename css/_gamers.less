@@ -1,0 +1,211 @@
+@import "_colors.less";
+@import "_base.less";
+
+.gamers-top {
+    margin-bottom: 30px;
+
+    .home {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-decoration: none;
+
+
+        .text-home {
+            color: @Special-White60;
+        }
+    }
+
+    .title {
+        .text-large-title();
+        text-align: center;
+        color: @Netspace;
+        margin-bottom: 40px;
+    }
+
+    .range-selector {
+        .rangeSelectorMixin();
+    }
+}
+
+.about-gamers {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 29px 30px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    .table-container {
+        display: grid;
+        grid-template-columns: 1.5fr 2.5fr 1fr 1fr;
+        width: 100%;
+
+        .header {
+            .table-base();
+            font-size: 14px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: @dark-grey;
+            border-bottom: 1px solid @Anti-FlashWhite;
+            margin-bottom: 16px;
+        }
+
+        .cell {
+            .table-base();
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .b-osipovich {
+            border: none;
+        }
+
+        .info-gamer {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .gamer-img {
+            width: 46px;
+            height: 46px;
+        }
+
+        .gamer-name {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: @Nero;
+            min-width: 72px;
+        }
+
+        .teams {
+            display: flex;
+            flex-wrap: nowrap;
+
+            .team {
+                width: 36px;
+                height: 36px;
+                border: 3px solid #FFFFFF;
+                background-color: @Anti-FlashWhite;
+                border-radius: 50%;
+
+                &:hover {
+                    border-color: @blue;
+
+                    +.help {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .image-help {
+            position: relative;
+            display: flex;
+
+            .help {
+                .tooltip-base();
+                display: none;
+
+                .help-text {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 0.2px;
+                }
+
+                .arrow {
+                    color: @blue;
+                    position: absolute;
+                    width: 16px;
+                    height: 10px;
+                    top: 38%;
+                    left: -10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1399px) {
+    .about-gamers .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width:1199px) {
+    .gamers-top .range-selector {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .gamers-top .range-selector {
+        .selectors {
+            flex-wrap: wrap;
+
+            .select-imit {
+                width: 49%;
+
+                .select-head {
+                    padding: 13px 50px;
+                }
+            }
+        }
+
+        .buttons-wrapper {
+            width: 100%;
+
+            button {
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:767px) {
+
+    .gamers-top .range-selector {
+        flex-wrap: wrap;
+        gap: 0;
+
+        .selectors {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            justify-content: space-between;
+
+            .select-imit {
+                width: 100%;
+            }
+        }
+
+        .buttons-wrapper {
+            display: flex;
+            gap: 4px;
+            margin-top: 20px;
+            width: 100%;
+
+            button {
+                width: 50%;
+            }
+        }
+    }
+
+    .gamers-search {
+        width: 100%;
+    }
+
+    .gamers-input-search {
+        width: 100%;
+    }
+
+}

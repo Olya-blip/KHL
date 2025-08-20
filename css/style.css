@@ -257,17 +257,44 @@
   display: flex;
   gap: 10px;
 }
+.clubs-top .range-selector .selectors .gamers-search {
+  flex: 1;
+}
+.clubs-top .range-selector .selectors .gamers-search .gamers-form-search {
+  position: relative;
+}
+.clubs-top .range-selector .selectors .gamers-search .gamers-form-search .gamers-input-search {
+  padding: 13px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  background: none;
+  color: #fff;
+  width: 100%;
+}
+.clubs-top .range-selector .selectors .gamers-search .gamers-form-search .gamers-icon-search {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 13px;
+  right: 3px;
+  cursor: pointer;
+}
 .clubs-top .range-selector .selectors .select-imit {
   position: relative;
 }
 .clubs-top .range-selector .selectors .select-imit .select-head {
-  padding: 13px 90.5px;
+  padding: 13px 22px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: 0.2s ease-out;
 }
@@ -1118,7 +1145,7 @@
   stroke: #fff;
 }
 .gamers-top .range-selector .selectors .select-imit .select-list {
-  background: #ADADAD;
+  background: #fff;
   color: #27282A;
   padding: 10px 0;
   border-radius: 0 0 4px 4px;
@@ -1158,21 +1185,23 @@
   color: white;
   border-radius: 4px;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
   border: none;
 }
-.gamers-top .range-selector #applyBtn {
+.gamers-top .range-selector .buttons-wrapper button[id="applyBtn"] {
   background-color: #fff;
   color: #27282A;
   transition: background-color 0.6s;
 }
-.gamers-top .range-selector #resetBtn {
-  transition: background-color 0.6s;
-}
-.gamers-top .range-selector #applyBtn:hover {
+.gamers-top .range-selector .buttons-wrapper button[id="applyBtn"]:hover {
   background-color: #007BFF;
 }
-.gamers-top .range-selector #resetBtn:hover {
+.gamers-top .range-selector .buttons-wrapper button[id="resetBtn"] {
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.6s;
+}
+.gamers-top .range-selector .buttons-wrapper button[id="resetBtn"]:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
 .about-gamers {
@@ -1189,23 +1218,26 @@
   width: 100%;
 }
 .about-gamers .table-container .header {
+  padding: 16px;
+  font-family: PT Sans;
   font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   color: #979797;
   border-bottom: 1px solid #F0F0F0;
   margin-bottom: 16px;
-  padding: 16px;
 }
 .about-gamers .table-container .cell {
-  border-bottom: 1px solid #F0F0F0;
   padding: 16px;
   font-family: PT Sans;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
+  border-bottom: 1px solid #F0F0F0;
 }
 .about-gamers .table-container .center {
   text-align: center;
@@ -1259,9 +1291,9 @@
   position: absolute;
   color: #fff;
   border-radius: 4px;
-  display: none;
   left: 100%;
   z-index: 1;
+  display: none;
 }
 .about-gamers .table-container .image-help .help .help-text {
   font-weight: 400;
@@ -1290,20 +1322,20 @@
   }
 }
 @media (max-width: 991px) {
-  .gamers-top .range-selector .selectors .select-imit .select-head {
-    padding: 13px 50px;
-  }
   .gamers-top .range-selector .selectors {
     flex-wrap: wrap;
+  }
+  .gamers-top .range-selector .selectors .select-imit {
+    width: 49%;
+  }
+  .gamers-top .range-selector .selectors .select-imit .select-head {
+    padding: 13px 50px;
   }
   .gamers-top .range-selector .buttons-wrapper {
     width: 100%;
   }
   .gamers-top .range-selector .buttons-wrapper button {
     width: 50%;
-  }
-  .gamers-top .range-selector .selectors .select-imit {
-    width: 49%;
   }
 }
 @media (max-width: 767px) {
@@ -1317,6 +1349,9 @@
     width: 100%;
     justify-content: space-between;
   }
+  .gamers-top .range-selector .selectors .select-imit {
+    width: 100%;
+  }
   .gamers-top .range-selector .buttons-wrapper {
     display: flex;
     gap: 4px;
@@ -1325,9 +1360,6 @@
   }
   .gamers-top .range-selector .buttons-wrapper button {
     width: 50%;
-  }
-  .gamers-top .range-selector .selectors .select-imit {
-    width: 100%;
   }
   .gamers-search {
     width: 100%;

@@ -1,0 +1,277 @@
+// Переменные
+@base-radius: 6px;
+@base-gap: 20px;
+@base-padding: 20px;
+
+// Миксины для типографики
+.text-base() {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.text-title() {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 120%;
+}
+
+.text-large-title() {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+// Миксин для карточек
+.card-base() {
+    border-radius: @base-radius;
+    padding: @base-padding;
+}
+
+// Миксин для выравнивания
+.flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column() {
+    display: flex;
+    flex-direction: column;
+}
+
+//Миксин для селектора
+.select-head-styles() {
+    padding: 13px 90.5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: #fff;
+    .flex-center();
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+
+//Миксин для кнопок
+.button-base() {
+    padding: 14px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+// Базовый миксин для .top
+.topMixin(@color: @Widget-grey, @margin-bottom: 24px, @margin-sides: 0) {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px @margin-sides 0 @margin-sides;
+    margin-bottom: @margin-bottom;
+
+    .text {
+        font-size: 32px;
+        font-weight: 700;
+        color: @color;
+    }
+
+    .glossary {
+        border: 1px solid rgba(151, 151, 151, 0.4);
+        border-radius: 4px;
+        background: none;
+        padding: 11px 22px;
+        display: flex;
+        gap: 6px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+
+        .text-right,
+        .glossary-image {
+            color: @dark-grey;
+        }
+
+        &:hover {
+            border: 1px solid rgba(0, 123, 255, 1);
+            background-color: @Special-White5;
+        }
+    }
+}
+
+// Базовый миксин для range-selector
+.rangeSelectorMixin(@background: #fff, @color: #fff, @borderColor: rgba(255, 255, 255, 0.2)) {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .selectors {
+        display: flex;
+        gap: 10px;
+
+        .gamers-search {
+            flex: 1;
+
+            .gamers-form-search {
+                position: relative;
+
+                .gamers-input-search {
+                    padding: 13px 22px;
+                    border: 1px solid @borderColor;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    transition: 0.2s ease-out;
+                    background: none;
+                    color: @color;
+                    width: 100%;
+                }
+
+                .gamers-icon-search {
+                    border: none;
+                    background: none;
+                    position: absolute;
+                    top: 13px;
+                    right: 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .select-imit {
+            position: relative;
+
+            .select-head {
+                padding: 13px 22px;
+                border: 1px solid @borderColor;
+                border-radius: 4px;
+                color: @color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: 0.2s ease-out;
+
+                .select-head-selected {
+                    margin-right: 6px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    transition: 0.2s ease-out;
+                    cursor: pointer;
+                }
+
+                .select-head-icon {
+                    display: block;
+                    line-height: 0;
+
+                    svg path {
+                        transition: .2s ease-out;
+                        stroke: @borderColor;
+                    }
+                }
+
+                &.active,
+                &:hover {
+                    background: #007BFF;
+                    border-color: #007BFF;
+
+                    .select-head-icon svg path {
+                        stroke: #fff;
+                    }
+                }
+            }
+
+            .select-list {
+                background: @background;
+                color: #27282A;
+                padding: 10px 0;
+                border-radius: 0 0 4px 4px;
+                display: none;
+                position: absolute;
+                z-index: 4;
+                left: 0;
+                top: 100%;
+                min-width: 100%;
+                max-height: 207px;
+                overflow: auto;
+
+                .select-item {
+                    padding: 3px;
+                    text-align: center;
+                    transition: .2s ease-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #007BFF;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &:hover .select-head.active {
+                border-radius: 4px 4px 0 0;
+            }
+        }
+    }
+
+    .buttons-wrapper {
+        display: flex;
+        gap: 4px;
+
+        button {
+            .button-base();
+            background-color: transparent;
+            border: none;
+
+            &[id="applyBtn"] {
+                background-color: #fff;
+                color: @black;
+                transition: background-color 0.6s;
+
+                &:hover {
+                    background-color: @blue;
+                }
+            }
+
+            &[id="resetBtn"] {
+                background-color: transparent;
+                color: white;
+                transition: background-color 0.6s;
+
+                &:hover {
+                    background-color: @Special-White15;
+                }
+            }
+        }
+    }
+}
+
+// Базовые стили для таблицы
+.table-base() {
+    padding: 16px;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    border-bottom: 1px solid @Anti-FlashWhite;
+}
+
+// Миксин для всплывающей подсказки
+.tooltip-base() {
+    background-color: @blue;
+    width: 164px;
+    height: 34px;
+    padding: 8px 10px;
+    position: absolute;
+    color: #fff;
+    border-radius: 4px;
+    left: 100%;
+    z-index: 1;
+}
