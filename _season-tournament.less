@@ -1,0 +1,99 @@
+@import "_colors.less";
+
+.event {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    margin-top: auto;
+
+    .tournament-info-data {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: @dark-grey;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        .from,
+        .by {
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+
+            .small-text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: 0.2px;
+                text-align: right;
+                color: white;
+            }
+
+            .large-text {
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 120%;
+                color: white;
+            }
+        }
+    }
+}
+
+.tournament {
+    .tournament-table {
+        .tournament-table-top--two {
+            justify-content: center;
+        }
+    }
+}
+
+
+@media (max-width:1399px) {
+
+    .event .tournament-info-data {
+        font-size: 10px;
+    }
+
+    .event .data .from .small-text,
+    .event .data .by .small-text,
+    .event .data .from .large-text,
+    .event .data .by .large-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .event .data .from .small-text,
+    .event .data .by .small-text {
+        font-size: 16px;
+    }
+
+    .event .data .from .large-text,
+    .event .data .by .large-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .event .tournament-info-data {
+        font-size: 8px;
+    }
+
+    .event .data .from .small-text,
+    .event .data .by .small-text {
+        font-size: 10px;
+    }
+
+    .event .data .from .large-text,
+    .event .data .by .large-text {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,189 @@
+.tournament .tournament-about {
+  padding: 30px 333px 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 20px;
+  background-color: rgba(238, 238, 238, 0.2);
+}
+.tournament .tournament-about .tournament-info-text-left,
+.tournament .tournament-about .text-right {
+  display: flex;
+  flex-direction: column;
+}
+.tournament .tournament-about .about-info-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.tournament .tournament-about .about-info-left .tournament-info-image {
+  width: 117px;
+}
+.tournament .tournament-about .about-info-left .tournament-info-text-left {
+  display: flex;
+  flex-direction: column;
+}
+.tournament .tournament-about .about-info-left .tournament-info-text-left .tournament-info-team,
+.tournament .tournament-about .about-info-left .tournament-info-text-left .event {
+  display: flex;
+  flex-direction: column;
+}
+.tournament .tournament-about .about-info-left .tournament-info-text-left .tournament-info-team {
+  gap: 5px;
+  color: #F4F4F4;
+}
+.tournament .tournament-about .about-info-left .tournament-info-text-left .tournament-info-team .name-team {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+}
+.tournament .tournament-about .about-info-left .tournament-info-text-left .tournament-info-team .city-team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-size: 26px;
+}
+.tournament .tournament-about .about-info-left .tournament-info-text-left .event {
+  gap: 5px;
+  align-items: flex-start;
+  margin-top: auto;
+}
+.tournament .tournament-about .about-info-left .tournament-info-text-left .event .data {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 120%;
+  color: #F4F4F4;
+}
+.tournament .tournament-about .about-info-left .tournament-info-text-left .event .text-event {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #979797;
+}
+.tournament .tournament-about .text-right {
+  gap: 14px;
+}
+.tournament .tournament-about .text-right .history-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+.tournament .tournament-about .text-right .gamer-info {
+  gap: 12px;
+  min-width: 250px;
+}
+.tournament .tournament-about .text-right .gamer-info .flex {
+  display: flex;
+  gap: 8px;
+  align-items: end;
+}
+.tournament .tournament-about .text-right .gamer-info .flex .text {
+  color: white;
+}
+.tournament .tournament-about .text-right .gamer-info .flex .dots {
+  flex-grow: 1;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.1);
+  border-bottom-width: thin;
+}
+.tournament .tournament-about .text-right .gamer-info .flex .info {
+  color: rgba(255, 255, 255, 0.6);
+}
+.tournament .tournament-about .text-right .gamer-info .flex .team-flex {
+  display: flex;
+  gap: 5px;
+}
+.tournament .tournament-about .text-right .gamer-info .flex .team-flex .team {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+}
+.tournament .tournament-table .tournament-table-top--season {
+  justify-content: start;
+}
+.tournament .season-cards .season-card .team {
+  display: flex;
+  gap: 10px;
+  max-height: 20px;
+}
+.tournament .season-cards .season-card .team .name-team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: white;
+}
+.tournament .season-cards .season-card .team .history {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 1399px) {
+  .tournament-about {
+    padding: 30px 133px 30px 50px;
+  }
+  .tournament .season-cards .season-card .team .history {
+    font-size: 12px;
+  }
+  .tournament .season-cards .season-card .team .name-team {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1199px) {
+  .tournament-about {
+    padding: 30px 63px 30px 50px;
+  }
+  .tournament .season-cards .season-card .team {
+    gap: 5px;
+  }
+  .tournament .season-cards .season-card .team .name-team {
+    font-size: 10px;
+  }
+  .tournament .season-cards .season-card .team .history {
+    font-size: 9px;
+  }
+}
+@media (max-width: 991px) {
+  .tournament-about {
+    padding: 30px 43px 30px 50px;
+  }
+  .tournament-about-info-left {
+    gap: 22px;
+  }
+  .tournament-about-info-left .tournament-info-text-left .tournament-info-team .name-team {
+    font-size: 28px;
+  }
+  .tournament-about-info-left .tournament-info-text-left .tournament-info-team .city-team {
+    font-size: 18px;
+  }
+  .tournament-about-info-left .tournament-info-text-left .event .data {
+    font-size: 24px;
+  }
+  .tournament-about-info-left .tournament-info-text-left .event .text-event {
+    font-size: 12px;
+  }
+  .tournament-about-info-left .text-right .history-name {
+    font-size: 12px;
+  }
+  .tournament-about-info-left .text-right .gamer-info .flex .text,
+  .tournament-about-info-left .text-right .gamer-info .flex .info {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .tournament-about {
+    padding: 30px 43px 30px 50px;
+    flex-direction: column;
+    gap: 35px;
+  }
+}
