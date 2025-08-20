@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Season-card</title>
+</head>
+
+<body>
+    <header>
+        <div class="large-container">
+            <div class="header-flex">
+                <div class="logo">
+                    <a class="img-logo" href="#">
+                        <img src="img/logo.svg" alt="логотип">
+                    </a>
+                </div>
+                <div class="menu">
+                    <div class="mobile-menu-overlay"></div>
+                    <div class="mobile-menu-head">
+                        <div class="close-mobile-menu">
+                            <img src="img/white-close.svg" alt="alt">
+                        </div>
+                        <a class="img-logo" href="#">
+                            <img src="img/logo.svg" alt="логотип">
+                        </a>
+                    </div>
+                    
+                    <ul class="menu-item">
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Сезоны</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Игроки</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Клубы</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Тренеры</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">О проекте</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="#" class="form-search">
+                        <input type="text" class="input-search" placeholder="Поиск по сайту">
+                        <button class="icon-search" aria-label="Искать">
+                            <img src="img/search.svg" alt="alt">
+                        </button>
+
+                        <div class="close-search">
+                            <img src="img/search-close.svg" alt="alt">
+                        </div>
+                    </form>
+                    <button type="button" class="search-btn">Найти</button>
+                </div>
+
+                <div class="open-mobile-search">
+                    <img src="img/search-icon.svg" alt="alt">
+                </div>
+
+                <div class="open-mobile-menu">
+                    <img src="img/burger.svg" alt="alt">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="season">
+        <div class="container">
+            <div class="season-top">
+                <h1 class="title">Сезоны</h1>
+
+                <div class="range-selector">
+                    <div class="selectors">
+                        <div class="select-imit">
+                            <div class="select-head">
+                                <span class="select-head-selected">1948/1949</span>
+                                <i class="select-head-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                                        fill="none">
+                                        <path d="M4 5.5L8 9.5L12 5.5" stroke-width="1.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="select-list">
+                                <div class="select-item">1941/1949</div>
+                                <div class="select-item">1942/1949</div>
+                                <div class="select-item">1943/1949</div>
+                                <div class="select-item">1944/1949</div>
+                                <div class="select-item">1945/1949</div>
+                                <div class="select-item">1946/1949</div>
+                                <div class="select-item">1947/1949</div>
+                                <div class="select-item">1948/1949</div>
+                                <div class="select-item">1949/1949</div>
+                                <div class="select-item">1950/1949</div>
+                                <div class="select-item">1941/1949</div>
+                            </div>
+                        </div>
+
+
+                        <div class="slider-container">
+                            <div id="range"></div>
+                        </div>
+
+
+                        <div class="select-imit">
+                            <div class="select-head">
+                                <span class="select-head-selected">1948/1949</span>
+                                <i class="select-head-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                                        fill="none">
+                                        <path d="M4 5.5L8 9.5L12 5.5" stroke-width="1.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </i>
+                            </div>
+
+                            <div class="select-list">
+                                <div class="select-item">1941/1949</div>
+                                <div class="select-item">1942/1949</div>
+                                <div class="select-item">1943/1949</div>
+                                <div class="select-item">1944/1949</div>
+                                <div class="select-item">1945/1949</div>
+                                <div class="select-item">1946/1949</div>
+                                <div class="select-item">1947/1949</div>
+                                <div class="select-item">1948/1949</div>
+                                <div class="select-item">1949/1949</div>
+                                <div class="select-item">1950/1949</div>
+                                <div class="select-item">1941/1949</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="buttons-wrapper">
+                        <button id="resetBtn">Сбросить</button>
+                        <button id="applyBtn">Применить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="season-cards" style="padding:0; margin-bottom:0">
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="season-card">
+                    <div class="history-card-top">
+                        <p class="text">Чемпионат СССР — открытый чемпионат СНГ, Высшая лига</p>
+                    </div>
+                    <div class="history-card-bottom">
+                        <p class="years">1948–1949 гг.</p>
+                        <div class="line"></div>
+                        <div class="history-card-calendar">
+                            <img src="img/calendar.svg" alt="календарь" class="history-image">
+                            <p class="data">01.09.1948–31.03.1949</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="large-container">
+            <div class="footer-flex">
+                <div class="left-images">
+                    <img src="./img/emblem.svg" alt="">
+                    <div class="copy">&copy; Copyrigh</div>
+                </div>
+                <div class="info">
+                    <div class="menu-item"><a href="#" class="text">О проекте</a></div> 
+                    <div class="menu-item"><a href="#" class="text">Контакты</a></div> 
+                    <div class="menu-item"><a href="#" class="text">Политика конфиденциальности</a></div> 
+                </div>
+                <div class="right-image">
+                    <p class="text-right">Разработано</p>
+                    <img src="./img/action.svg" alt="">
+                </div>
+            </div>
+
+            <p class="copy-sm">&copy; Copyrigh</p>
+        </div>
+    </footer>
+</body>
+
+</html>

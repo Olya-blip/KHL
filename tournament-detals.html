@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Tournament-detals</title>
+</head>
+
+<body>
+    <header>
+        <div class="large-container">
+            <div class="header-flex">
+                <div class="logo">
+                    <a class="img-logo" href="#">
+                        <img src="img/logo.svg" alt="логотип">
+                    </a>
+                </div>
+                <div class="menu">
+                    <div class="mobile-menu-overlay"></div>
+                    <div class="mobile-menu-head">
+                        <div class="close-mobile-menu">
+                            <img src="img/white-close.svg" alt="alt">
+                        </div>
+                        <a class="img-logo" href="#">
+                            <img src="img/logo.svg" alt="логотип">
+                        </a>
+                    </div>
+
+                    <ul class="menu-item">
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Сезоны</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Игроки</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Клубы</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Тренеры</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">О проекте</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="#" class="form-search">
+                        <input type="text" class="input-search" placeholder="Поиск по сайту">
+                        <button class="icon-search" aria-label="Искать">
+                            <img src="img/search.svg" alt="alt">
+                        </button>
+
+                        <div class="close-search">
+                            <img src="img/search-close.svg" alt="alt">
+                        </div>
+                    </form>
+                    <button type="button" class="search-btn">Найти</button>
+                </div>
+
+                <div class="open-mobile-search">
+                    <img src="img/search-icon.svg" alt="alt">
+                </div>
+
+                <div class="open-mobile-menu">
+                    <img src="img/burger.svg" alt="alt">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="tournament">
+        <div class="container">
+            <div class="tournament-top">
+                <a href="#" class="home">
+                    <img src="img/select-left.svg" alt="стрелка назад">
+                    <p class="text-home">Сезоны</p>
+                </a>
+            </div>
+            <div class="tournament-info">
+                <div class="tournament-info-left">
+                    <div class="text-info">
+                        <span class="tournament-info-text">Суперлига. Чемпионат России. 2 этап (1-6 места)
+                            <div class="svg-info">
+                                <svg class="info-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.99997 7.29843e-05C5.6155 7.29843e-05 4.26213 0.410614 3.111 1.17978C1.95986 1.94895 1.06265 3.04219 0.532844 4.32127C0.00303302 5.60034 -0.13559 7.0078 0.134505 8.36566C0.404601 9.72352 1.07128 10.9708 2.05025 11.9498C3.02921 12.9287 4.27648 13.5954 5.63434 13.8655C6.9922 14.1356 8.39966 13.997 9.67874 13.4672C10.9578 12.9373 12.0511 12.0401 12.8202 10.889C13.5894 9.73787 13.9999 8.3845 13.9999 7.00004C14.0041 6.07961 13.826 5.16747 13.4757 4.31629C13.1254 3.46511 12.6099 2.69177 11.9591 2.04092C11.3082 1.39008 10.5349 0.874622 9.68371 0.524333C8.83253 0.174044 7.92039 -0.00413956 6.99997 7.29843e-05ZM7.63633 10.1818C7.63633 10.3506 7.56928 10.5125 7.44994 10.6318C7.3306 10.7512 7.16874 10.8182 6.99997 10.8182C6.83119 10.8182 6.66933 10.7512 6.54999 10.6318C6.43065 10.5125 6.36361 10.3506 6.36361 10.1818V6.36368C6.36361 6.1949 6.43065 6.03304 6.54999 5.9137C6.66933 5.79436 6.83119 5.72731 6.99997 5.72731C7.16874 5.72731 7.3306 5.79436 7.44994 5.9137C7.56928 6.03304 7.63633 6.1949 7.63633 6.36368V10.1818ZM6.99997 4.45459C6.87411 4.45459 6.75107 4.41727 6.64642 4.34735C6.54177 4.27742 6.46021 4.17804 6.41205 4.06176C6.36388 3.94548 6.35128 3.81753 6.37583 3.69409C6.40039 3.57064 6.461 3.45726 6.54999 3.36826C6.63899 3.27926 6.75238 3.21866 6.87582 3.1941C6.99926 3.16955 7.12721 3.18215 7.24349 3.23031C7.35977 3.27848 7.45916 3.36004 7.52908 3.46469C7.599 3.56934 7.63633 3.69237 7.63633 3.81823C7.63633 3.98701 7.56928 4.14887 7.44994 4.26821C7.3306 4.38755 7.16874 4.45459 6.99997 4.45459Z"
+                                        fill="currentColor" fill-opacity="0.6" />
+                                </svg>
+                                <div class="info-card-record">
+                                    <svg class="arrow" width="17" height="30" viewBox="0 0 17 30" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 15L16.5 0.277569L16.5 29.7224L0 15Z" fill="currentColor" />
+                                    </svg>
+                                    <div class="info-card-help">
+                                        <p class="info-card-text">Данные из газет</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <p class="tournament-info-data">01.09.2000 - 10.10.2001</p>
+                </div>
+                <div class="tournament-info-right">
+                    <img src="img/torpedo.png" alt="Эмблема Торпедо" class="tournament-info-image">
+                    <div class="tournament-info-text-rigth">
+                        <p class="tournament-info-winner">победитель турнира</p>
+                        <div class="tournament-info-team">
+                            <p class="name-team">Торпедо</p>
+                            <p class="city-team">Нижний Новгород</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tournament-table">
+                <div class="tournament-table-top">
+                    <ul class="tournament-item">
+                        <li class="tournament-list">Результаты матчей</li>
+                        <li class="tournament-list">Турнирная таблица</li>
+                        <li class="tournament-list">Личная статистика</li>
+                        <li class="tournament-list">Командная статистика</li>
+                        <li class="tournament-list">Статистика тренеров</li>
+                    </ul>
+                    <button type="button" class="glossary">
+                        <p class="text-right">Глоссарий</p>
+                        <svg class="glossary-img" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2204_15582)">
+                                <mask id="mask0_2204_15582" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+                                    y="0" width="12" height="12">
+                                    <path d="M12 0H0V12H12V0Z" fill="currentColor" />
+                                </mask>
+                                <g mask="url(#mask0_2204_15582)">
+                                    <path
+                                        d="M9.1095 11.5939H2.89088C2.50143 11.5935 2.12804 11.4386 1.85266 11.1632C1.57728 10.8878 1.42239 10.5145 1.422 10.125V1.87501C1.42239 1.48556 1.57728 1.11217 1.85266 0.836792C2.12804 0.561411 2.50143 0.406525 2.89088 0.406128H9.1095C9.49891 0.406624 9.87224 0.561541 10.1476 0.836901C10.423 1.11226 10.5779 1.48559 10.5784 1.87501V10.125C10.5779 10.5144 10.423 10.8877 10.1476 11.1631C9.87224 11.4385 9.49891 11.5934 9.1095 11.5939ZM2.89088 1.15613C2.70028 1.15633 2.51755 1.23213 2.38277 1.36691C2.248 1.50168 2.1722 1.68441 2.172 1.87501V10.125C2.1722 10.3156 2.248 10.4983 2.38277 10.6331C2.51755 10.7679 2.70028 10.8437 2.89088 10.8439H9.1095C9.30009 10.8437 9.48283 10.7679 9.6176 10.6331C9.75237 10.4983 9.82818 10.3156 9.82838 10.125V1.87501C9.82818 1.68441 9.75237 1.50168 9.6176 1.36691C9.48283 1.23213 9.30009 1.15633 9.1095 1.15613H2.89088Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M3.66497 2.40002H4.25448L5.1151 4.83303H4.57473L4.4101 4.33802H3.48722L3.32785 4.83303H2.80286L3.66497 2.40002ZM3.62973 3.91953H4.27473L3.95185 2.94115L3.62973 3.91953Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M8.80481 6.64722H3.17981C3.08035 6.64722 2.98496 6.60771 2.91464 6.53738C2.84431 6.46706 2.80481 6.37167 2.80481 6.27222C2.80481 6.17276 2.84431 6.07738 2.91464 6.00705C2.98496 5.93673 3.08035 5.89722 3.17981 5.89722H8.80481C8.90427 5.89722 8.99964 5.93673 9.06997 6.00705C9.1403 6.07738 9.17981 6.17276 9.17981 6.27222C9.17981 6.37167 9.1403 6.46706 9.06997 6.53738C8.99964 6.60771 8.90427 6.64722 8.80481 6.64722Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M8.80481 8.13147H3.17981C3.08035 8.13147 2.98496 8.09196 2.91464 8.02164C2.84431 7.95131 2.80481 7.85593 2.80481 7.75647C2.80481 7.65701 2.84431 7.56163 2.91464 7.4913C2.98496 7.42098 3.08035 7.38147 3.17981 7.38147H8.80481C8.90427 7.38147 8.99964 7.42098 9.06997 7.4913C9.1403 7.56163 9.17981 7.65701 9.17981 7.75647C9.17981 7.85593 9.1403 7.95131 9.06997 8.02164C8.99964 8.09196 8.90427 8.13147 8.80481 8.13147Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M8.82056 9.59998H3.19556C3.0961 9.59998 3.00072 9.56047 2.9304 9.49014C2.86007 9.41981 2.82056 9.32443 2.82056 9.22498C2.82056 9.12552 2.86007 9.03014 2.9304 8.95981C3.00072 8.88948 3.0961 8.84998 3.19556 8.84998H8.82056C8.92001 8.84998 9.0154 8.88948 9.08573 8.95981C9.15605 9.03014 9.19556 9.12552 9.19556 9.22498C9.19556 9.32443 9.15605 9.41981 9.08573 9.49014C9.0154 9.56047 8.92001 9.59998 8.82056 9.59998Z"
+                                        fill="currentColor" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2204_15582">
+                                    <rect width="12" height="12" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+                <div class="table-wrapper">
+                    <div class="table">
+                        <div class="header center">Место</div>
+                        <div class="header center">Клуб</div>
+                        <div class="header center">И</div>
+                        <div class="header center">В</div>
+                        <div class="header center">П</div>
+                        <div class="header center">Ш</div>
+                        <div class="header center">О</div>
+                        <div class="header center">ВО</div>
+                        <div class="header center">Н</div>
+                        <div class="header center">ПО</div>
+                        <div class="cell center">1</div>
+                        <div class="cell center">
+                            <div class="team">
+                                <img src="img/lokomotiv.png" alt="Локомотив" class="team-logo">
+                                <p class="team-name">Локомотив</p>
+                            </div>
+                        </div>
+                        <div class="cell center">68</div>
+                        <div class="cell center">39</div>
+                        <div class="cell center">15</div>
+                        <div class="cell center">191-122</div>
+                        <div class="cell center">102</div>
+                        <div class="cell center">102</div>
+                        <div class="cell center">102</div>
+                        <div class="cell center">102</div>
+                        <div class="cell center">2</div>
+                        <div class="cell center">
+                            <div class="team">
+                                <img src="img/knight.png" alt="Витязь" class="team-logo">
+                                <p class="team-name">Витязь</p>
+                            </div>
+                        </div>
+                        <div class="cell center">68</div>
+                        <div class="cell center">37</div>
+                        <div class="cell center">21</div>
+                        <div class="cell center">204-167</div>
+                        <div class="cell center">89</div>
+                        <div class="cell center">89</div>
+                        <div class="cell center">89</div>
+                        <div class="cell center">89</div>
+                        <div class="cell center">3</div>
+                        <div class="cell center">
+                            <div class="team">
+                                <img src="img/dinamoM.png" alt="Динамо Москва" class="team-logo dinamo">
+                                <p class="team-name">Динамо Москва</p>
+                            </div>
+                        </div>
+                        <div class="cell center">68</div>
+                        <div class="cell center">31</div>
+                        <div class="cell center">20</div>
+                        <div class="cell center">191-122</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">4</div>
+                        <div class="cell center">
+                            <div class="team">
+                                <img src="img/dinamo.png" alt="Динамо Мн" class="team-logo">
+                                <p class="team-name">Динамо Мн</p>
+                            </div>
+                        </div>
+                        <div class="cell center">68</div>
+                        <div class="cell center">36</div>
+                        <div class="cell center">21</div>
+                        <div class="cell center">204-167</div>
+                        <div class="cell center">86</div>
+                        <div class="cell center">86</div>
+                        <div class="cell center">86</div>
+                        <div class="cell center">86</div>
+                        <div class="cell center">5</div>
+                        <div class="cell center">
+                            <div class="team">
+                                <img src="img/kueyun.png" alt="Куньлунь РС" class="team-logo kueyun">
+                                <p class="team-name">Куньлунь РС</p>
+                            </div>
+                        </div>
+                        <div class="cell center">68</div>
+                        <div class="cell center">30</div>
+                        <div class="cell center">21</div>
+                        <div class="cell center">191-122</div>
+                        <div class="cell center">85</div>
+                        <div class="cell center">85</div>
+                        <div class="cell center">85</div>
+                        <div class="cell center">85</div>
+                        <div class="cell center">6</div>
+                        <div class="cell center">
+                            <div class="team">
+                                <img src="img/cka.png" alt="СКА" class="team-logo">
+                                <p class="team-name">СКА</p>
+                            </div>
+                        </div>
+                        <div class="cell center">68</div>
+                        <div class="cell center">36</div>
+                        <div class="cell center">26</div>
+                        <div class="cell center">204-167</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">7</div>
+                        <div class="cell center">
+                            <div class="team">
+                                <img src="img/severstal.png" alt="Северсталь" class="team-logo">
+                                <p class="team-name">Северсталь</p>
+                            </div>
+                        </div>
+                        <div class="cell center">68</div>
+                        <div class="cell center">28</div>
+                        <div class="cell center">24</div>
+                        <div class="cell center">191-122</div>
+                        <div class="cell center">89</div>
+                        <div class="cell center">89</div>
+                        <div class="cell center">89</div>
+                        <div class="cell center">89</div>
+                        <div class="cell center">8</div>
+                        <div class="cell center">
+                            <div class="team">
+                                <img src="img/spartak.png" alt="Спартак" class="team-logo">
+                                <p class="team-name">Спартак</p>
+                            </div>
+                        </div>
+                        <div class="cell center">68</div>
+                        <div class="cell center">24</div>
+                        <div class="cell center">28</div>
+                        <div class="cell center">204-167</div>
+                        <div class="cell center">86</div>
+                        <div class="cell center">86</div>
+                        <div class="cell center">86</div>
+                        <div class="cell center">86</div>
+                        <div class="cell center">9</div>
+                        <div class="cell center">
+                            <div class="team">
+                                <img src="img/torpedo-mini.png" alt="Торпедо" class="team-logo">
+                                <p class="team-name">Торпедо</p>
+                            </div>
+                        </div>
+                        <div class="cell center">68</div>
+                        <div class="cell center">19</div>
+                        <div class="cell center">34</div>
+                        <div class="cell center">191-122</div>
+                        <div class="cell center">102</div>
+                        <div class="cell center">102</div>
+                        <div class="cell center">102</div>
+                        <div class="cell center">102</div>
+                        <div class="cell center">10</div>
+                        <div class="cell center">
+                            <div class="team">
+                                <img src="img/sochi.png" alt="ХК Сочи" class="team-logo sochi">
+                                <p class="team-name">ХК Сочи</p>
+                            </div>
+                        </div>
+                        <div class="cell center">68</div>
+                        <div class="cell center">19</div>
+                        <div class="cell center">33</div>
+                        <div class="cell center">204-167</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">87</div>
+                        <div class="cell center">11</div>
+                        <div class="cell center">
+                            <div class="team">
+                                <img src="img/cska.png" alt="ЦСКА" class="team-logo">
+                                <p class="team-name">ЦСКА</p>
+                            </div>
+                        </div>
+                        <div class="cell center">68</div>
+                        <div class="cell center">16</div>
+                        <div class="cell center">31</div>
+                        <div class="cell center">191-122</div>
+                        <div class="cell center">86</div>
+                        <div class="cell center">86</div>
+                        <div class="cell center">86</div>
+                        <div class="cell center">86</div>
+                    </div>
+                </div>
+                <div class="rules">
+                    <div class="column">
+                        <ol class="rules-item">
+                            <li class="rules-list">Места команд в Дивизионах, Конференциях и Общей таблице Чемпионата
+                                определяются по сумме очков, набранных во всех матчах Первого этапа Чемпионата.</li>
+                            <li class="rules-list">Для определения текущего и окончательного распределения мест между
+                                командами в Дивизионах, Конференциях и Общей таблице Чемпионата в случае равенства очков
+                                у двух или более команд преимущество получает команда:
+                                <ul class="about-rules-item">
+                                    <li class="about-rules-list ">имеющая большее количество побед в основное время во
+                                        всех
+                                        матчах Первого этапа;</li>
+                                </ul>
+                            </li>
+                        </ol>
+
+                    </div>
+                    <div class="column two">
+                        <ul class="about-rules-item">
+                            <li class="about-rules-list">одержавшая большее количество побед в овертаймах во всех матчах
+                                Первого этапа;</li>
+                            <li class="about-rules-list">имеющая лучшую разность заброшенных и пропущенных шайб во всех
+                                матчах Первого этапа;</li>
+                            <li class="about-rules-list">имеющая большее количество заброшенных шайб во всех матчах
+                                Первого
+                                этапа.</li>
+                        </ul>
+                        <p class="rules-text">Указанные выше критерии применяются последовательно</p>
+                        <p class="rules-text-last">При равенстве всех показателей распределение мест между командами
+                            определяется жребием</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="large-container">
+            <div class="footer-flex">
+                <div class="left-images">
+                    <img src="./img/emblem.svg" alt="">
+                    <div class="copy">&copy; Copyrigh</div>
+                </div>
+                <div class="info">
+                    <div class="menu-item"><a href="#" class="text">О проекте</a></div>
+                    <div class="menu-item"><a href="#" class="text">Контакты</a></div>
+                    <div class="menu-item"><a href="#" class="text">Политика конфиденциальности</a></div>
+                </div>
+                <div class="right-image">
+                    <p class="text-right">Разработано</p>
+                    <img src="./img/action.svg" alt="">
+                </div>
+            </div>
+
+            <p class="copy-sm">&copy; Copyrigh</p>
+        </div>
+    </footer>
+</body>
+
+</html>

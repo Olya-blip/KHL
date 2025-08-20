@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Clubs-card</title>
+</head>
+
+<body>
+    <header>
+        <div class="large-container">
+            <div class="header-flex">
+                <div class="logo">
+                    <a class="img-logo" href="#">
+                        <img src="img/logo.svg" alt="логотип">
+                    </a>
+                </div>
+                <div class="menu">
+                    <div class="mobile-menu-overlay"></div>
+                    <div class="mobile-menu-head">
+                        <div class="close-mobile-menu">
+                            <img src="img/white-close.svg" alt="alt">
+                        </div>
+                        <a class="img-logo" href="#">
+                            <img src="img/logo.svg" alt="логотип">
+                        </a>
+                    </div>
+
+                    <ul class="menu-item">
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Сезоны</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Игроки</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Клубы</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">Тренеры</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-list__link">О проекте</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="#" class="form-search">
+                        <input type="text" class="input-search" placeholder="Поиск по сайту">
+                        <button class="icon-search" aria-label="Искать">
+                            <img src="img/search.svg" alt="alt">
+                        </button>
+
+                        <div class="close-search">
+                            <img src="img/search-close.svg" alt="alt">
+                        </div>
+                    </form>
+                    <button type="button" class="search-btn">Найти</button>
+                </div>
+
+                <div class="open-mobile-search">
+                    <img src="img/search-icon.svg" alt="alt">
+                </div>
+
+                <div class="open-mobile-menu">
+                    <img src="img/burger.svg" alt="alt">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="clubs">
+        <div class="container">
+            <div class="clubs-top">
+                <a href="#" class="home">
+                    <img src="img/select-left.svg" alt="стрелка назад">
+                    <p class="text-home">Главная</p>
+                </a>
+                <h1 class="title">Клубы</h1>
+                <div class="range-selector">
+                    <div class="selectors">
+                        <div class="select-imit">
+                            <div class="select-head">
+                                <span class="select-head-selected">Сезон</span>
+                                <i class="select-head-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                                        fill="none">
+                                        <path d="M4 5.5L8 9.5L12 5.5" stroke-width="1.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="select-list">
+                                <div class="select-item">1941/1949</div>
+                                <div class="select-item">1942/1949</div>
+                                <div class="select-item">1943/1949</div>
+                                <div class="select-item">1944/1949</div>
+                                <div class="select-item">1945/1949</div>
+                                <div class="select-item">1946/1949</div>
+                                <div class="select-item">1947/1949</div>
+                                <div class="select-item">1948/1949</div>
+                                <div class="select-item">1949/1949</div>
+                                <div class="select-item">1950/1949</div>
+                                <div class="select-item">1941/1949</div>
+                            </div>
+                        </div>
+
+                        <div class="select-imit">
+                            <div class="select-head">
+                                <span class="select-head-selected">Турнир</span>
+                                <i class="select-head-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                                        fill="none">
+                                        <path d="M4 5.5L8 9.5L12 5.5" stroke-width="1.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </i>
+                            </div>
+
+                            <div class="select-list">
+                                <div class="select-item">1941/1949</div>
+                                <div class="select-item">1942/1949</div>
+                                <div class="select-item">1943/1949</div>
+                                <div class="select-item">1944/1949</div>
+                                <div class="select-item">1945/1949</div>
+                                <div class="select-item">1946/1949</div>
+                                <div class="select-item">1947/1949</div>
+                                <div class="select-item">1948/1949</div>
+                                <div class="select-item">1949/1949</div>
+                                <div class="select-item">1950/1949</div>
+                                <div class="select-item">1941/1949</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons-wrapper">
+                        <button id="resetBtn">Сбросить</button>
+                        <button id="applyBtn">Применить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="clubs-cards">
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <svg class="info-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.99997 7.29843e-05C5.6155 7.29843e-05 4.26213 0.410614 3.111 1.17978C1.95986 1.94895 1.06265 3.04219 0.532844 4.32127C0.00303302 5.60034 -0.13559 7.0078 0.134505 8.36566C0.404601 9.72352 1.07128 10.9708 2.05025 11.9498C3.02921 12.9287 4.27648 13.5954 5.63434 13.8655C6.9922 14.1356 8.39966 13.997 9.67874 13.4672C10.9578 12.9373 12.0511 12.0401 12.8202 10.889C13.5894 9.73787 13.9999 8.3845 13.9999 7.00004C14.0041 6.07961 13.826 5.16747 13.4757 4.31629C13.1254 3.46511 12.6099 2.69177 11.9591 2.04092C11.3082 1.39008 10.5349 0.874622 9.68371 0.524333C8.83253 0.174044 7.92039 -0.00413956 6.99997 7.29843e-05ZM7.63633 10.1818C7.63633 10.3506 7.56928 10.5125 7.44994 10.6318C7.3306 10.7512 7.16874 10.8182 6.99997 10.8182C6.83119 10.8182 6.66933 10.7512 6.54999 10.6318C6.43065 10.5125 6.36361 10.3506 6.36361 10.1818V6.36368C6.36361 6.1949 6.43065 6.03304 6.54999 5.9137C6.66933 5.79436 6.83119 5.72731 6.99997 5.72731C7.16874 5.72731 7.3306 5.79436 7.44994 5.9137C7.56928 6.03304 7.63633 6.1949 7.63633 6.36368V10.1818ZM6.99997 4.45459C6.87411 4.45459 6.75107 4.41727 6.64642 4.34735C6.54177 4.27742 6.46021 4.17804 6.41205 4.06176C6.36388 3.94548 6.35128 3.81753 6.37583 3.69409C6.40039 3.57064 6.461 3.45726 6.54999 3.36826C6.63899 3.27926 6.75238 3.21866 6.87582 3.1941C6.99926 3.16955 7.12721 3.18215 7.24349 3.23031C7.35977 3.27848 7.45916 3.36004 7.52908 3.46469C7.599 3.56934 7.63633 3.69237 7.63633 3.81823C7.63633 3.98701 7.56928 4.14887 7.44994 4.26821C7.3306 4.38755 7.16874 4.45459 6.99997 4.45459Z"
+                                fill="currentColor" fill-opacity="0.6" />
+                        </svg>
+                        <img src="img/crystal.png" alt="Кристалл" class="club-emblem">
+                        <div class="club-text club-text--crystal">
+                            <p class="club-name">Кристалл Электросталь</p>
+                            <p class="club-city">Электросталь</p>
+                        </div>
+
+                        <div class="club-card-info">
+                            <img class="img-xs" src="img/arrow.svg" alt="стрелка">
+                            <div class="club-card-history">История названия клуба</div>
+                            <div class="border-bottom"></div>
+                            <ul class="club-card-item">
+                                <li class="club-card-list">
+                                    <p class="data">1963-2000</p>
+                                    <p class="club-name">Кристалл Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1957-1963</p>
+                                    <p class="club-name">Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1953-1957</p>
+                                    <p class="club-name">ДК им. Карла Маркса</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1952-1953</p>
+                                    <p class="club-name">Химик</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <svg class="info-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.99997 7.29843e-05C5.6155 7.29843e-05 4.26213 0.410614 3.111 1.17978C1.95986 1.94895 1.06265 3.04219 0.532844 4.32127C0.00303302 5.60034 -0.13559 7.0078 0.134505 8.36566C0.404601 9.72352 1.07128 10.9708 2.05025 11.9498C3.02921 12.9287 4.27648 13.5954 5.63434 13.8655C6.9922 14.1356 8.39966 13.997 9.67874 13.4672C10.9578 12.9373 12.0511 12.0401 12.8202 10.889C13.5894 9.73787 13.9999 8.3845 13.9999 7.00004C14.0041 6.07961 13.826 5.16747 13.4757 4.31629C13.1254 3.46511 12.6099 2.69177 11.9591 2.04092C11.3082 1.39008 10.5349 0.874622 9.68371 0.524333C8.83253 0.174044 7.92039 -0.00413956 6.99997 7.29843e-05ZM7.63633 10.1818C7.63633 10.3506 7.56928 10.5125 7.44994 10.6318C7.3306 10.7512 7.16874 10.8182 6.99997 10.8182C6.83119 10.8182 6.66933 10.7512 6.54999 10.6318C6.43065 10.5125 6.36361 10.3506 6.36361 10.1818V6.36368C6.36361 6.1949 6.43065 6.03304 6.54999 5.9137C6.66933 5.79436 6.83119 5.72731 6.99997 5.72731C7.16874 5.72731 7.3306 5.79436 7.44994 5.9137C7.56928 6.03304 7.63633 6.1949 7.63633 6.36368V10.1818ZM6.99997 4.45459C6.87411 4.45459 6.75107 4.41727 6.64642 4.34735C6.54177 4.27742 6.46021 4.17804 6.41205 4.06176C6.36388 3.94548 6.35128 3.81753 6.37583 3.69409C6.40039 3.57064 6.461 3.45726 6.54999 3.36826C6.63899 3.27926 6.75238 3.21866 6.87582 3.1941C6.99926 3.16955 7.12721 3.18215 7.24349 3.23031C7.35977 3.27848 7.45916 3.36004 7.52908 3.46469C7.599 3.56934 7.63633 3.69237 7.63633 3.81823C7.63633 3.98701 7.56928 4.14887 7.44994 4.26821C7.3306 4.38755 7.16874 4.45459 6.99997 4.45459Z"
+                                fill="currentColor" fill-opacity="0.6" />
+                        </svg>
+                        <img src="img/cska.png" alt="ЦСКА" class="club-emblem club-emblem--cska">
+                        <div class="club-text">
+                            <p class="club-name">ЦСКА</p>
+                            <p class="club-city">Москва</p>
+                        </div>
+
+                        <div class="club-card-info">
+                            <img class="img-xs" src="img/arrow.svg" alt="стрелка">
+                            <div class="club-card-history">История названия клуба</div>
+                            <div class="border-bottom"></div>
+                            <ul class="club-card-item">
+                                <li class="club-card-list">
+                                    <p class="data">1963-2000</p>
+                                    <p class="club-name">Кристалл Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1957-1963</p>
+                                    <p class="club-name">Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1953-1957</p>
+                                    <p class="club-name">ДК им. Карла Маркса</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1952-1953</p>
+                                    <p class="club-name">Химик</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/cka.png" alt="СКА" class="club-emblem club-emblem--cka">
+                        <div class="club-text">
+                            <p class="club-name">СКА</p>
+                            <p class="club-city">Санкт-Петербург</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/metallurgist.png" alt="Металлург" class="club-emblem club-emblem--metallurgist">
+                        <div class="club-text">
+                            <p class="club-name">Металлург МГ</p>
+                            <p class="club-city">Магнитогорск</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/crystal.png" alt="Кристалл" class="club-emblem">
+                        <div class="club-text club-text--crystal">
+                            <p class="club-name">Кристалл Электросталь</p>
+                            <p class="club-city">Электросталь</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/cska.png" alt="ЦСКА" class="club-emblem club-emblem--cska">
+                        <div class="club-text">
+                            <p class="club-name">ЦСКА</p>
+                            <p class="club-city">Москва</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/cka.png" alt="СКА" class="club-emblem club-emblem--cka">
+                        <div class="club-text">
+                            <p class="club-name">СКА</p>
+                            <p class="club-city">Санкт-Петербург</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/metallurgist.png" alt="Металлург" class="club-emblem club-emblem--metallurgist">
+                        <div class="club-text">
+                            <p class="club-name">Металлург МГ</p>
+                            <p class="club-city">Магнитогорск</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/dinamo.png" alt="Динамо" class="club-emblem club-emblem--dinamo">
+                        <div class="club-text">
+                            <p class="club-name">Динамо МН</p>
+                            <p class="club-city">Минск</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <svg class="info-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.99997 7.29843e-05C5.6155 7.29843e-05 4.26213 0.410614 3.111 1.17978C1.95986 1.94895 1.06265 3.04219 0.532844 4.32127C0.00303302 5.60034 -0.13559 7.0078 0.134505 8.36566C0.404601 9.72352 1.07128 10.9708 2.05025 11.9498C3.02921 12.9287 4.27648 13.5954 5.63434 13.8655C6.9922 14.1356 8.39966 13.997 9.67874 13.4672C10.9578 12.9373 12.0511 12.0401 12.8202 10.889C13.5894 9.73787 13.9999 8.3845 13.9999 7.00004C14.0041 6.07961 13.826 5.16747 13.4757 4.31629C13.1254 3.46511 12.6099 2.69177 11.9591 2.04092C11.3082 1.39008 10.5349 0.874622 9.68371 0.524333C8.83253 0.174044 7.92039 -0.00413956 6.99997 7.29843e-05ZM7.63633 10.1818C7.63633 10.3506 7.56928 10.5125 7.44994 10.6318C7.3306 10.7512 7.16874 10.8182 6.99997 10.8182C6.83119 10.8182 6.66933 10.7512 6.54999 10.6318C6.43065 10.5125 6.36361 10.3506 6.36361 10.1818V6.36368C6.36361 6.1949 6.43065 6.03304 6.54999 5.9137C6.66933 5.79436 6.83119 5.72731 6.99997 5.72731C7.16874 5.72731 7.3306 5.79436 7.44994 5.9137C7.56928 6.03304 7.63633 6.1949 7.63633 6.36368V10.1818ZM6.99997 4.45459C6.87411 4.45459 6.75107 4.41727 6.64642 4.34735C6.54177 4.27742 6.46021 4.17804 6.41205 4.06176C6.36388 3.94548 6.35128 3.81753 6.37583 3.69409C6.40039 3.57064 6.461 3.45726 6.54999 3.36826C6.63899 3.27926 6.75238 3.21866 6.87582 3.1941C6.99926 3.16955 7.12721 3.18215 7.24349 3.23031C7.35977 3.27848 7.45916 3.36004 7.52908 3.46469C7.599 3.56934 7.63633 3.69237 7.63633 3.81823C7.63633 3.98701 7.56928 4.14887 7.44994 4.26821C7.3306 4.38755 7.16874 4.45459 6.99997 4.45459Z"
+                                fill="currentColor" fill-opacity="0.6" />
+                        </svg>
+                        <img src="img/cska.png" alt="ЦСКА" class="club-emblem club-emblem--cska">
+                        <div class="club-text">
+                            <p class="club-name">ЦСКА</p>
+                            <p class="club-city">Москва</p>
+                        </div>
+
+                        <div class="club-card-info">
+                            <img class="img-xs" src="img/arrow.svg" alt="стрелка">
+                            <div class="club-card-history">История названия клуба</div>
+                            <div class="border-bottom"></div>
+                            <ul class="club-card-item">
+                                <li class="club-card-list">
+                                    <p class="data">1963-2000</p>
+                                    <p class="club-name">Кристалл Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1957-1963</p>
+                                    <p class="club-name">Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1953-1957</p>
+                                    <p class="club-name">ДК им. Карла Маркса</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1952-1953</p>
+                                    <p class="club-name">Химик</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/cka.png" alt="СКА" class="club-emblem club-emblem--cka">
+                        <div class="club-text">
+                            <p class="club-name">СКА</p>
+                            <p class="club-city">Санкт-Петербург</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/metallurgist.png" alt="Металлур" class="club-emblem club-emblem--metallurgist">
+                        <div class="club-text">
+                            <p class="club-name">Металлург МГ</p>
+                            <p class="club-city">Магнитогорск</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/dinamo.png" alt="Динамо" class="club-emblem club-emblem--dinamo">
+                        <div class="club-text">
+                            <p class="club-name">Динамо МН</p>
+                            <p class="club-city">Минск</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/cska.png" alt="ЦСКА" class="club-emblem club-emblem--cska">
+                        <div class="club-text">
+                            <p class="club-name">ЦСКА</p>
+                            <p class="club-city">Москва</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/cka.png" alt="СКА" class="club-emblem club-emblem--cka">
+                        <div class="club-text">
+                            <p class="club-name">СКА</p>
+                            <p class="club-city">Санкт-Петербург</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/metallurgist.png" alt="Металлург" class="club-emblem club-emblem--metallurgist">
+                        <div class="club-text">
+                            <p class="club-name">Металлург МГ</p>
+                            <p class="club-city">Магнитогорск</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <svg class="info-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.99997 7.29843e-05C5.6155 7.29843e-05 4.26213 0.410614 3.111 1.17978C1.95986 1.94895 1.06265 3.04219 0.532844 4.32127C0.00303302 5.60034 -0.13559 7.0078 0.134505 8.36566C0.404601 9.72352 1.07128 10.9708 2.05025 11.9498C3.02921 12.9287 4.27648 13.5954 5.63434 13.8655C6.9922 14.1356 8.39966 13.997 9.67874 13.4672C10.9578 12.9373 12.0511 12.0401 12.8202 10.889C13.5894 9.73787 13.9999 8.3845 13.9999 7.00004C14.0041 6.07961 13.826 5.16747 13.4757 4.31629C13.1254 3.46511 12.6099 2.69177 11.9591 2.04092C11.3082 1.39008 10.5349 0.874622 9.68371 0.524333C8.83253 0.174044 7.92039 -0.00413956 6.99997 7.29843e-05ZM7.63633 10.1818C7.63633 10.3506 7.56928 10.5125 7.44994 10.6318C7.3306 10.7512 7.16874 10.8182 6.99997 10.8182C6.83119 10.8182 6.66933 10.7512 6.54999 10.6318C6.43065 10.5125 6.36361 10.3506 6.36361 10.1818V6.36368C6.36361 6.1949 6.43065 6.03304 6.54999 5.9137C6.66933 5.79436 6.83119 5.72731 6.99997 5.72731C7.16874 5.72731 7.3306 5.79436 7.44994 5.9137C7.56928 6.03304 7.63633 6.1949 7.63633 6.36368V10.1818ZM6.99997 4.45459C6.87411 4.45459 6.75107 4.41727 6.64642 4.34735C6.54177 4.27742 6.46021 4.17804 6.41205 4.06176C6.36388 3.94548 6.35128 3.81753 6.37583 3.69409C6.40039 3.57064 6.461 3.45726 6.54999 3.36826C6.63899 3.27926 6.75238 3.21866 6.87582 3.1941C6.99926 3.16955 7.12721 3.18215 7.24349 3.23031C7.35977 3.27848 7.45916 3.36004 7.52908 3.46469C7.599 3.56934 7.63633 3.69237 7.63633 3.81823C7.63633 3.98701 7.56928 4.14887 7.44994 4.26821C7.3306 4.38755 7.16874 4.45459 6.99997 4.45459Z"
+                                fill="currentColor" fill-opacity="0.6" />
+                        </svg>
+                        <img src="img/crystal.png" alt="Кристалл" class="club-emblem">
+                        <div class="club-text club-text--crystal">
+                            <p class="club-name">Кристалл Электросталь</p>
+                            <p class="club-city">Электросталь</p>
+                        </div>
+                        <div class="club-card-info">
+                            <img class="img-xs" src="img/arrow.svg" alt="стрелка">
+                            <div class="club-card-history">История названия клуба</div>
+                            <div class="border-bottom"></div>
+                            <ul class="club-card-item">
+                                <li class="club-card-list">
+                                    <p class="data">1963-2000</p>
+                                    <p class="club-name">Кристалл Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1957-1963</p>
+                                    <p class="club-name">Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1953-1957</p>
+                                    <p class="club-name">ДК им. Карла Маркса</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1952-1953</p>
+                                    <p class="club-name">Химик</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <svg class="info-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.99997 7.29843e-05C5.6155 7.29843e-05 4.26213 0.410614 3.111 1.17978C1.95986 1.94895 1.06265 3.04219 0.532844 4.32127C0.00303302 5.60034 -0.13559 7.0078 0.134505 8.36566C0.404601 9.72352 1.07128 10.9708 2.05025 11.9498C3.02921 12.9287 4.27648 13.5954 5.63434 13.8655C6.9922 14.1356 8.39966 13.997 9.67874 13.4672C10.9578 12.9373 12.0511 12.0401 12.8202 10.889C13.5894 9.73787 13.9999 8.3845 13.9999 7.00004C14.0041 6.07961 13.826 5.16747 13.4757 4.31629C13.1254 3.46511 12.6099 2.69177 11.9591 2.04092C11.3082 1.39008 10.5349 0.874622 9.68371 0.524333C8.83253 0.174044 7.92039 -0.00413956 6.99997 7.29843e-05ZM7.63633 10.1818C7.63633 10.3506 7.56928 10.5125 7.44994 10.6318C7.3306 10.7512 7.16874 10.8182 6.99997 10.8182C6.83119 10.8182 6.66933 10.7512 6.54999 10.6318C6.43065 10.5125 6.36361 10.3506 6.36361 10.1818V6.36368C6.36361 6.1949 6.43065 6.03304 6.54999 5.9137C6.66933 5.79436 6.83119 5.72731 6.99997 5.72731C7.16874 5.72731 7.3306 5.79436 7.44994 5.9137C7.56928 6.03304 7.63633 6.1949 7.63633 6.36368V10.1818ZM6.99997 4.45459C6.87411 4.45459 6.75107 4.41727 6.64642 4.34735C6.54177 4.27742 6.46021 4.17804 6.41205 4.06176C6.36388 3.94548 6.35128 3.81753 6.37583 3.69409C6.40039 3.57064 6.461 3.45726 6.54999 3.36826C6.63899 3.27926 6.75238 3.21866 6.87582 3.1941C6.99926 3.16955 7.12721 3.18215 7.24349 3.23031C7.35977 3.27848 7.45916 3.36004 7.52908 3.46469C7.599 3.56934 7.63633 3.69237 7.63633 3.81823C7.63633 3.98701 7.56928 4.14887 7.44994 4.26821C7.3306 4.38755 7.16874 4.45459 6.99997 4.45459Z"
+                                fill="currentColor" fill-opacity="0.6" />
+                        </svg>
+                        <img src="img/cska.png" alt="ЦСКА" class="club-emblem club-emblem--cska">
+                        <div class="club-text">
+                            <p class="club-name">ЦСКА</p>
+                            <p class="club-city">Москва</p>
+                        </div>
+                        <div class="club-card-info">
+                            <img class="img-xs" src="img/arrow.svg" alt="стрелка">
+                            <div class="club-card-history">История названия клуба</div>
+                            <div class="border-bottom"></div>
+                            <ul class="club-card-item">
+                                <li class="club-card-list">
+                                    <p class="data">1963-2000</p>
+                                    <p class="club-name">Кристалл Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1957-1963</p>
+                                    <p class="club-name">Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1953-1957</p>
+                                    <p class="club-name">ДК им. Карла Маркса</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1952-1953</p>
+                                    <p class="club-name">Химик</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/cka.png" alt="СКА" class="club-emblem club-emblem--cka">
+                        <div class="club-text">
+                            <p class="club-name">СКА</p>
+                            <p class="club-city">Санкт-Петербург</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/burevistnic.svg" alt="Буревестник" class="club-emblem club-emblem--burevistnic">
+                        <div class="club-text">
+                            <p class="club-name">Буревестник Челябинск</p>
+                            <p class="club-city">Челябинск</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <svg class="info-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.99997 7.29843e-05C5.6155 7.29843e-05 4.26213 0.410614 3.111 1.17978C1.95986 1.94895 1.06265 3.04219 0.532844 4.32127C0.00303302 5.60034 -0.13559 7.0078 0.134505 8.36566C0.404601 9.72352 1.07128 10.9708 2.05025 11.9498C3.02921 12.9287 4.27648 13.5954 5.63434 13.8655C6.9922 14.1356 8.39966 13.997 9.67874 13.4672C10.9578 12.9373 12.0511 12.0401 12.8202 10.889C13.5894 9.73787 13.9999 8.3845 13.9999 7.00004C14.0041 6.07961 13.826 5.16747 13.4757 4.31629C13.1254 3.46511 12.6099 2.69177 11.9591 2.04092C11.3082 1.39008 10.5349 0.874622 9.68371 0.524333C8.83253 0.174044 7.92039 -0.00413956 6.99997 7.29843e-05ZM7.63633 10.1818C7.63633 10.3506 7.56928 10.5125 7.44994 10.6318C7.3306 10.7512 7.16874 10.8182 6.99997 10.8182C6.83119 10.8182 6.66933 10.7512 6.54999 10.6318C6.43065 10.5125 6.36361 10.3506 6.36361 10.1818V6.36368C6.36361 6.1949 6.43065 6.03304 6.54999 5.9137C6.66933 5.79436 6.83119 5.72731 6.99997 5.72731C7.16874 5.72731 7.3306 5.79436 7.44994 5.9137C7.56928 6.03304 7.63633 6.1949 7.63633 6.36368V10.1818ZM6.99997 4.45459C6.87411 4.45459 6.75107 4.41727 6.64642 4.34735C6.54177 4.27742 6.46021 4.17804 6.41205 4.06176C6.36388 3.94548 6.35128 3.81753 6.37583 3.69409C6.40039 3.57064 6.461 3.45726 6.54999 3.36826C6.63899 3.27926 6.75238 3.21866 6.87582 3.1941C6.99926 3.16955 7.12721 3.18215 7.24349 3.23031C7.35977 3.27848 7.45916 3.36004 7.52908 3.46469C7.599 3.56934 7.63633 3.69237 7.63633 3.81823C7.63633 3.98701 7.56928 4.14887 7.44994 4.26821C7.3306 4.38755 7.16874 4.45459 6.99997 4.45459Z"
+                                fill="currentColor" fill-opacity="0.6" />
+                        </svg>
+                        <img src="img/crystal.png" alt="Кристалл" class="club-emblem">
+                        <div class="club-text club-text--crystal">
+                            <p class="club-name">Кристалл Электросталь</p>
+                            <p class="club-city">Электросталь</p>
+                        </div>
+                        <div class="club-card-info">
+                            <img class="img-xs" src="img/arrow.svg" alt="стрелка">
+                            <div class="club-card-history">История названия клуба</div>
+                            <div class="border-bottom"></div>
+                            <ul class="club-card-item">
+                                <li class="club-card-list">
+                                    <p class="data">1963-2000</p>
+                                    <p class="club-name">Кристалл Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1957-1963</p>
+                                    <p class="club-name">Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1953-1957</p>
+                                    <p class="club-name">ДК им. Карла Маркса</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1952-1953</p>
+                                    <p class="club-name">Химик</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <svg class="info-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.99997 7.29843e-05C5.6155 7.29843e-05 4.26213 0.410614 3.111 1.17978C1.95986 1.94895 1.06265 3.04219 0.532844 4.32127C0.00303302 5.60034 -0.13559 7.0078 0.134505 8.36566C0.404601 9.72352 1.07128 10.9708 2.05025 11.9498C3.02921 12.9287 4.27648 13.5954 5.63434 13.8655C6.9922 14.1356 8.39966 13.997 9.67874 13.4672C10.9578 12.9373 12.0511 12.0401 12.8202 10.889C13.5894 9.73787 13.9999 8.3845 13.9999 7.00004C14.0041 6.07961 13.826 5.16747 13.4757 4.31629C13.1254 3.46511 12.6099 2.69177 11.9591 2.04092C11.3082 1.39008 10.5349 0.874622 9.68371 0.524333C8.83253 0.174044 7.92039 -0.00413956 6.99997 7.29843e-05ZM7.63633 10.1818C7.63633 10.3506 7.56928 10.5125 7.44994 10.6318C7.3306 10.7512 7.16874 10.8182 6.99997 10.8182C6.83119 10.8182 6.66933 10.7512 6.54999 10.6318C6.43065 10.5125 6.36361 10.3506 6.36361 10.1818V6.36368C6.36361 6.1949 6.43065 6.03304 6.54999 5.9137C6.66933 5.79436 6.83119 5.72731 6.99997 5.72731C7.16874 5.72731 7.3306 5.79436 7.44994 5.9137C7.56928 6.03304 7.63633 6.1949 7.63633 6.36368V10.1818ZM6.99997 4.45459C6.87411 4.45459 6.75107 4.41727 6.64642 4.34735C6.54177 4.27742 6.46021 4.17804 6.41205 4.06176C6.36388 3.94548 6.35128 3.81753 6.37583 3.69409C6.40039 3.57064 6.461 3.45726 6.54999 3.36826C6.63899 3.27926 6.75238 3.21866 6.87582 3.1941C6.99926 3.16955 7.12721 3.18215 7.24349 3.23031C7.35977 3.27848 7.45916 3.36004 7.52908 3.46469C7.599 3.56934 7.63633 3.69237 7.63633 3.81823C7.63633 3.98701 7.56928 4.14887 7.44994 4.26821C7.3306 4.38755 7.16874 4.45459 6.99997 4.45459Z"
+                                fill="currentColor" fill-opacity="0.6" />
+                        </svg>
+                        <img src="img/cska.png" alt="ЦСКА" class="club-emblem club-emblem--cska">
+                        <div class="club-text">
+                            <p class="club-name">ЦСКА</p>
+                            <p class="club-city">Москва</p>
+                        </div>
+                        <div class="club-card-info">
+                            <img class="img-xs" src="img/arrow.svg" alt="стрелка">
+                            <div class="club-card-history">История названия клуба</div>
+                            <div class="border-bottom"></div>
+                            <ul class="club-card-item">
+                                <li class="club-card-list">
+                                    <p class="data">1963-2000</p>
+                                    <p class="club-name">Кристалл Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1957-1963</p>
+                                    <p class="club-name">Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1953-1957</p>
+                                    <p class="club-name">ДК им. Карла Маркса</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1952-1953</p>
+                                    <p class="club-name">Химик</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/cka.png" alt="СКА" class="club-emblem club-emblem--cka">
+                        <div class="club-text">
+                            <p class="club-name">СКА</p>
+                            <p class="club-city">Санкт-Петербург</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/metallurgist.png" alt="Металлург" class="club-emblem club-emblem--metallurgist">
+                        <div class="club-text">
+                            <p class="club-name">Металлург МГ</p>
+                            <p class="club-city">Магнитогорск</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/dinamo.png" alt="Динамо" class="club-emblem club-emblem--dinamo">
+                        <div class="club-text">
+                            <p class="club-name">Динамо МН</p>
+                            <p class="club-city">Минск</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <svg class="info-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.99997 7.29843e-05C5.6155 7.29843e-05 4.26213 0.410614 3.111 1.17978C1.95986 1.94895 1.06265 3.04219 0.532844 4.32127C0.00303302 5.60034 -0.13559 7.0078 0.134505 8.36566C0.404601 9.72352 1.07128 10.9708 2.05025 11.9498C3.02921 12.9287 4.27648 13.5954 5.63434 13.8655C6.9922 14.1356 8.39966 13.997 9.67874 13.4672C10.9578 12.9373 12.0511 12.0401 12.8202 10.889C13.5894 9.73787 13.9999 8.3845 13.9999 7.00004C14.0041 6.07961 13.826 5.16747 13.4757 4.31629C13.1254 3.46511 12.6099 2.69177 11.9591 2.04092C11.3082 1.39008 10.5349 0.874622 9.68371 0.524333C8.83253 0.174044 7.92039 -0.00413956 6.99997 7.29843e-05ZM7.63633 10.1818C7.63633 10.3506 7.56928 10.5125 7.44994 10.6318C7.3306 10.7512 7.16874 10.8182 6.99997 10.8182C6.83119 10.8182 6.66933 10.7512 6.54999 10.6318C6.43065 10.5125 6.36361 10.3506 6.36361 10.1818V6.36368C6.36361 6.1949 6.43065 6.03304 6.54999 5.9137C6.66933 5.79436 6.83119 5.72731 6.99997 5.72731C7.16874 5.72731 7.3306 5.79436 7.44994 5.9137C7.56928 6.03304 7.63633 6.1949 7.63633 6.36368V10.1818ZM6.99997 4.45459C6.87411 4.45459 6.75107 4.41727 6.64642 4.34735C6.54177 4.27742 6.46021 4.17804 6.41205 4.06176C6.36388 3.94548 6.35128 3.81753 6.37583 3.69409C6.40039 3.57064 6.461 3.45726 6.54999 3.36826C6.63899 3.27926 6.75238 3.21866 6.87582 3.1941C6.99926 3.16955 7.12721 3.18215 7.24349 3.23031C7.35977 3.27848 7.45916 3.36004 7.52908 3.46469C7.599 3.56934 7.63633 3.69237 7.63633 3.81823C7.63633 3.98701 7.56928 4.14887 7.44994 4.26821C7.3306 4.38755 7.16874 4.45459 6.99997 4.45459Z"
+                                fill="currentColor" fill-opacity="0.6" />
+                        </svg>
+                        <img src="img/cska.png" alt="ЦСКА" class="club-emblem club-emblem--cska">
+                        <div class="club-text">
+                            <p class="club-name">ЦСКА</p>
+                            <p class="club-city">Москва</p>
+                        </div>
+                        <div class="club-card-info">
+                            <img class="img-xs" src="img/arrow.svg" alt="стрелка">
+                            <div class="club-card-history">История названия клуба</div>
+                            <div class="border-bottom"></div>
+                            <ul class="club-card-item">
+                                <li class="club-card-list">
+                                    <p class="data">1963-2000</p>
+                                    <p class="club-name">Кристалл Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1957-1963</p>
+                                    <p class="club-name">Электросталь</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1953-1957</p>
+                                    <p class="club-name">ДК им. Карла Маркса</p>
+                                </li>
+                                <li class="club-card-list">
+                                    <p class="data">1952-1953</p>
+                                    <p class="club-name">Химик</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/cka.png" alt="СКА" class="club-emblem club-emblem--cka">
+                        <div class="club-text">
+                            <p class="club-name">СКА</p>
+                            <p class="club-city">Санкт-Петербург</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/metallurgist.png" alt="Металлург" class="club-emblem club-emblem--metallurgist">
+                        <div class="club-text">
+                            <p class="club-name">Металлург МГ</p>
+                            <p class="club-city">Магнитогорск</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/dinamo.png" alt="Динамо" class="club-emblem club-emblem--dinamo">
+                        <div class="club-text">
+                            <p class="club-name">Динамо МН</p>
+                            <p class="club-city">Минск</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/cska.png" alt="ЦСКА" class="club-emblem club-emblem--cska">
+                        <div class="club-text">
+                            <p class="club-name">ЦСКА</p>
+                            <p class="club-city">Москва</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/cka.png" alt="СКА" class="club-emblem club-emblem--cka">
+                        <div class="club-text">
+                            <p class="club-name">СКА</p>
+                            <p class="club-city">Санкт-Петербург</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="club-card">
+                    <div class="club-card-input">
+                        <img src="img/metallurgist.png" alt="Металлург" class="club-emblem club-emblem--metallurgist">
+                        <div class="club-text">
+                            <p class="club-name">Металлург МГ</p>
+                            <p class="club-city">Магнитогорск</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="large-container">
+            <div class="footer-flex">
+                <div class="left-images">
+                    <img src="./img/emblem.svg" alt="">
+                    <div class="copy">&copy; Copyrigh</div>
+                </div>
+                <div class="info">
+                    <div class="menu-item"><a href="#" class="text">О проекте</a></div>
+                    <div class="menu-item"><a href="#" class="text">Контакты</a></div>
+                    <div class="menu-item"><a href="#" class="text">Политика конфиденциальности</a></div>
+                </div>
+                <div class="right-image">
+                    <p class="text-right">Разработано</p>
+                    <img src="./img/action.svg" alt="">
+                </div>
+            </div>
+
+            <p class="copy-sm">&copy; Copyrigh</p>
+        </div>
+    </footer>
+</body>
+
+</html>
