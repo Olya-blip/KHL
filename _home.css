@@ -1,0 +1,342 @@
+.banner {
+  margin-bottom: 70px;
+}
+.history {
+  margin-bottom: 70px;
+}
+.history .history-center {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.history .history-center .title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+}
+.history .history-center .links {
+  display: flex;
+  gap: 5px;
+}
+.history .history-center .links .link {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(238, 238, 238, 0.1);
+  border-radius: 4px;
+  padding: 9px 30px;
+  position: relative;
+  border: 1px solid transparent;
+}
+.history .history-center .links .link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+.history .history-center .links .link:hover {
+  color: #F5F5F5;
+}
+.history .history-center .links .link:hover::after {
+  border-color: #007BFF;
+}
+.history .history-center .links .link:hover {
+  border: 1px solid #007BFF;
+}
+.history .history-cards {
+  background-color: rgba(238, 238, 238, 0.05);
+  padding: 30px;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 70px;
+}
+.history .history-cards .history-card {
+  padding: 15px;
+  background-color: rgba(238, 238, 238, 0.1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+}
+.history .history-cards .history-card .history-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.history .history-cards .history-card .history-card-top .text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #F4F4F4;
+}
+.history .history-cards .history-card .history-card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  margin-top: auto;
+}
+.history .history-cards .history-card .history-card-bottom .years {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  color: #F4F4F4;
+}
+.history .history-cards .history-card .history-card-bottom .line {
+  border: 1px solid rgba(244, 244, 244, 0.5);
+  width: 100%;
+}
+.history .history-cards .history-card .history-card-bottom .history-card-calendar {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.history .history-cards .history-card .history-card-bottom .history-card-calendar .data {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: rgba(244, 244, 244, 0.5);
+}
+.history .match .match-top {
+  margin-bottom: 44px;
+}
+.history .match .match-top .text-match {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #F6F6F6;
+}
+.history .match .match-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+.history .match .match-cards .match-card {
+  padding: 20px 13px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  position: relative;
+}
+.history .match .match-cards .match-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+.history .match .match-cards .match-card:hover {
+  color: #F5F5F5;
+}
+.history .match .match-cards .match-card:hover::after {
+  border-color: #007BFF;
+}
+.history .match .match-cards .match-card:hover {
+  border: 1px solid #007BFF;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.history .match .match-cards .match-card .match-card-data .text-data {
+  color: #007BFF;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.history .match .match-cards .match-card .match-card-teams {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-left .team-image {
+  width: 46px;
+  height: 46px;
+  background-color: #F4F4F4;
+  border-radius: 50%;
+  padding: 3px;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-left .text-team {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-left .text-team .team-name {
+  color: #27282A;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  min-width: 89px;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-left .text-team .team-city {
+  color: #9D9D9D;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-center {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-center .score-top {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .one {
+  color: #27282A;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 120%;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .center {
+  color: #27282A;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 120%;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .two {
+  color: #27282A;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 120%;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-center .score-bottom {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-center .score-bottom .score {
+  color: #9D9D9D;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-right .team-image {
+  width: 46px;
+  height: 46px;
+  background-color: #F4F4F4;
+  border-radius: 50%;
+  padding: 3px;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-right .text-team {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-right .text-team .team-name {
+  color: #27282A;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+}
+.history .match .match-cards .match-card .match-card-teams .match-card-right .text-team .team-city {
+  color: #9D9D9D;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
+}
+.history .swiper {
+  width: 100%;
+  height: 100%;
+}
+.history .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1199px) {
+  .history .history-cards {
+    background: none;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .history .match .match-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .banner {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .history .history-center .title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .history .history-cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .history .match .match-cards {
+    display: none;
+  }
+  .history,
+  .history .match .match-cards .match-card .match-card-data .text-data {
+    margin-bottom: 0;
+  }
+  .history .history-center .links .link {
+    padding: 10px;
+  }
+  .history .history-cards .history-card {
+    width: 100%;
+    max-width: 404px;
+  }
+  .history .match .match-top .text-match {
+    margin-bottom: 24px;
+  }
+  .history .match .match-top .text-match {
+    font-size: 28px;
+  }
+  .history .match .match-cards .match-card .match-card-teams {
+    gap: 8px;
+  }
+  .history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .center,
+  .history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .one,
+  .history .match .match-cards .match-card .match-card-teams .match-card-center .score-top .two {
+    font-size: 18px;
+  }
+  .history .match .match-cards .match-card .match-card-teams .match-card-center .score-bottom .score {
+    font-size: 9px;
+  }
+}

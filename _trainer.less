@@ -1,0 +1,338 @@
+@import "_colors.less";
+@import "_trainer-statistic.less";
+@import "_match.less";
+
+.trainer-table {
+    .card-wrapper {
+        .trainer-card {
+            .trainer-name {
+                display: flex;
+                gap: 6px;
+                margin-bottom: 30px;
+
+                .trainer-text {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.2px;
+                    color: @Special-White50;
+                }
+
+                .name-trainer {
+                    color: @Widget-grey;
+                }
+            }
+
+            .card {
+                background-color: @light-grey;
+                padding: 30px;
+                border-radius: 6px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 44px;
+
+                .image {
+                    grid-row: span 2;
+                }
+
+                .trainer-img {
+                    display: flex;
+                    gap: 30px;
+
+                    .name-parametrs {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 43px;
+
+                        .first-name {
+                            color: @Widget-grey;
+                            font-weight: 400;
+                            font-size: 26px;
+                            line-height: 120%;
+                        }
+
+                        .last-name {
+                            color: @Widget-grey;
+                            font-weight: 700;
+                            font-size: 40px;
+                            line-height: 100%;
+                        }
+                    }
+
+                    .trainer-text {
+                        margin-top: 20px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: 0.2px;
+                        color: @Special-White60;
+                    }
+                }
+            }
+
+
+            .info-btn {
+                display: flex;
+                gap: 259px;
+
+                .gamer-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    min-width: 250px;
+
+                    .flex {
+                        display: flex;
+                        gap: 8px;
+                        align-items: end;
+
+                        .text {
+                            color: @Special-White60;
+                        }
+
+                        .dots {
+                            flex-grow: 1;
+                            border-bottom: 2px dashed rgba(255, 255, 255, 0.1);
+                            border-bottom-width: thin;
+                        }
+
+                        .info {
+                            color: #fff;
+                        }
+
+                        .team-flex {
+                            display: flex;
+                            gap: 5px;
+
+                            .team {
+                                background-color: #fff;
+                                border-radius: 50%;
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .gamer-link {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    cursor: pointer;
+                    text-align: center;
+                    margin-top: auto;
+
+
+                    .khl {
+                        border-radius: 4px;
+                        background-color: @Special-White15;
+                        padding: 12px 20px;
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    .mhl {
+                        border-radius: 4px;
+                        background-color: @Special-White15;
+                        padding: 12px 20px;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .table-trainer {
+            .table-top {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .text-trainer {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 100%;
+                    color: @Widget-grey;
+                }
+
+                .glossary {
+                    border: 1px solid @Special-White20;
+                    border-radius: 4px;
+                    background: none;
+                    padding: 11px 22px;
+                    display: flex;
+                    gap: 6px;
+                    cursor: pointer;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: auto;
+
+                    .text-right {
+                        color: @Widget-grey;
+                    }
+                }
+
+                .glossary-img {
+                    color: @Widget-grey;
+                }
+
+                .glossary:hover {
+                    border: 1px solid rgba(0, 123, 255, 1);
+                    background-color: @Special-White5;
+                }
+            }
+
+            .info-seasons {
+                background-color: #fff;
+                padding: 20px 30px;
+                border-radius: 5px;
+                width: 100%;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+
+                .info-container {
+                    display: grid;
+                    grid-template-columns: 1fr 0.3fr 0.4fr repeat(3, 0.5fr) 0.6fr repeat(3, 0.5fr) 0.6fr repeat(3, 0.5fr) 0.6fr repeat(3, 0.5fr);
+                    min-width: max-content;
+
+                    .header-group {
+                        grid-column-end: 3 span;
+                        border-bottom: 1px solid #F2F2F2;
+                        padding-bottom: 12px;
+                    }
+
+                    .header {
+                        margin-bottom: 24px;
+                        color: @dark-grey;
+                    }
+
+                    .header-top {
+                        border-bottom: 1px solid #F2F2F2;
+                        text-align: center;
+                    }
+
+                    .center {
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.2px;
+                    }
+
+                    .cell {
+                        margin-bottom: 22px;
+                    }
+
+                    .season {
+                        color: @black;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+
+                    .play,
+                    .champion {
+                        margin-bottom: 0;
+                    }
+
+                    .play-off,
+                    .championship {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    .team-name {
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 100%;
+                    }
+
+                    .number {
+                        display: flex;
+                        align-items: end;
+                        justify-content: center;
+                    }
+
+                    .last {
+                        margin-bottom: 8px;
+                    }
+
+                    .all {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                    }
+
+                    .all-number {
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1399px) {
+    .trainer-table .card-wrapper .trainer-card .info-btn {
+        gap: 160px;
+    }
+}
+
+
+@media (max-width:1199px) {
+    .trainer-table .card-wrapper .trainer-card .info-btn {
+        gap: 40px;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:991px) {
+    .trainer-table .card-wrapper .trainer-card .card .trainer-img {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .trainer-table .card-wrapper .trainer-card .card .trainer-img .name-parametrs {
+        margin-top: 0;
+    }
+
+    .trainer-table .card-wrapper .trainer-card .card .trainer-img .trainer-text {
+        margin-top: 10px;
+    }
+
+    .trainer-table .card-wrapper .trainer-card .card .trainer-img .name-parametrs .first-name {
+        font-size: 20px;
+    }
+
+    .trainer-table .card-wrapper .trainer-card .card .trainer-img .name-parametrs .last-name {
+        font-size: 26px;
+    }
+
+    .trainer-table .card-wrapper .table-trainer .table-top .text-trainer {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .trainer-table .card-wrapper .trainer-card .card {
+        flex-direction: column;
+    }
+
+    .trainer-table .card-wrapper .trainer-card .info-btn {
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .trainer-table .card-wrapper .table-trainer .table-top .text-trainer {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,253 @@
+.season-top {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.season-top .title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #F6F6F6;
+}
+.season-top .range-selector {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.season-top .range-selector .selectors {
+  display: flex;
+  gap: 20px;
+}
+.season-top .range-selector .selectors .select-imit {
+  position: relative;
+}
+.season-top .range-selector .selectors .select-imit .select-head {
+  padding: 13px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+.season-top .range-selector .selectors .select-imit .select-head .select-head-selected {
+  margin-right: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.season-top .range-selector .selectors .select-imit .select-head .select-head-icon {
+  display: block;
+  line-height: 0;
+}
+.season-top .range-selector .selectors .select-imit .select-head .select-head-icon svg path {
+  transition: 0.2s ease-out;
+  stroke: rgba(255, 255, 255, 0.2);
+}
+.season-top .range-selector .selectors .select-imit .select-head.active,
+.season-top .range-selector .selectors .select-imit .select-head:hover {
+  background: #007BFF;
+  border-color: #007BFF;
+}
+.season-top .range-selector .selectors .select-imit .select-head.active .select-head-icon svg path,
+.season-top .range-selector .selectors .select-imit .select-head:hover .select-head-icon svg path {
+  stroke: #fff;
+}
+.season-top .range-selector .selectors .select-imit .select-list {
+  background: #fff;
+  color: #27282A;
+  padding: 10px 0;
+  border-radius: 0 0 4px 4px;
+  display: none;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: 100%;
+  min-width: 100%;
+  max-height: 207px;
+  overflow: auto;
+}
+.season-top .range-selector .selectors .select-imit .select-list .select-item {
+  padding: 3px;
+  text-align: center;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.season-top .range-selector .selectors .select-imit .select-list .select-item:hover {
+  background: #007BFF;
+  color: #fff;
+}
+.season-top .range-selector .selectors .select-imit:hover .select-head.active {
+  border-radius: 4px 4px 0 0;
+}
+.season-top .range-selector .slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 305px;
+}
+.season-top .range-selector .slider-container #range {
+  width: 100%;
+}
+.season-top .range-selector .slider-container .ui-widget.ui-widget-content {
+  border: none;
+  background: #fff;
+}
+.season-top .range-selector .slider-container .ui-slider .ui-slider-range {
+  background: #007BFF;
+}
+.season-top .range-selector .slider-container .ui-slider-horizontal {
+  height: 1px;
+}
+.season-top .range-selector .slider-container .ui-slider .ui-slider-handle {
+  border-radius: 50%;
+  background: #007BFF;
+  border: none;
+  width: 14px;
+  height: 14px;
+  top: -7px;
+}
+.season-top .range-selector .slider-container .ui-slider .ui-slider-handle:hover {
+  background: #fff;
+}
+.season-top .range-selector .buttons-wrapper {
+  display: flex;
+  gap: 4px;
+}
+.season-top .range-selector .buttons-wrapper button {
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 8%;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+.season-top .range-selector #applyBtn {
+  background-color: #fff;
+  color: #27282A;
+  transition: background-color 0.6s;
+}
+.season-top .range-selector #resetBtn {
+  transition: background-color 0.6s;
+}
+.season-top .range-selector #applyBtn:hover {
+  background-color: #007BFF;
+}
+.season-top .range-selector #resetBtn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.season-cards {
+  padding: 30px;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 70px;
+}
+.season-cards .season-card {
+  padding: 15px;
+  background-color: rgba(238, 238, 238, 0.1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+}
+.season-cards .season-card .history-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.season-cards .season-card .history-card-top .text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #F4F4F4;
+}
+.season-cards .season-card .history-card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  margin-top: auto;
+}
+.season-cards .season-card .history-card-bottom .years {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  color: #F4F4F4;
+}
+.season-cards .season-card .history-card-bottom .line {
+  border: 1px solid rgba(244, 244, 244, 0.5);
+  width: 100%;
+}
+.season-cards .season-card .history-card-bottom .history-card-calendar {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.season-cards .season-card .history-card-bottom .history-card-calendar .data {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: rgba(244, 244, 244, 0.5);
+}
+@media (max-width: 1199px) {
+  .season-cards .season-card .history-card-bottom .years,
+  .season-cards .season-card .history-card-top .text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991px) {
+  .season-top .range-selector .slider-container {
+    display: none;
+  }
+  .season-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .season-top .range-selector {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .season-top .range-selector .selectors {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .season-top .range-selector .buttons-wrapper {
+    display: flex;
+    gap: 4px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .season-top .range-selector .buttons-wrapper button {
+    width: 50%;
+  }
+  .season-top .range-selector .selectors,
+  .season-top {
+    gap: 0;
+  }
+  .season-top .title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .season-cards .season-card .history-card-bottom .years,
+  .season-cards .season-card .history-card-top .text {
+    font-size: 14px;
+  }
+  .season-cards {
+    grid-template-columns: 1fr;
+  }
+}

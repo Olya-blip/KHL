@@ -1,0 +1,323 @@
+.gamers-top {
+  margin-bottom: 30px;
+}
+.gamers-top .home {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+.gamers-top .home .text-home {
+  color: rgba(255, 255, 255, 0.6);
+}
+.gamers-top .title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #F6F6F6;
+  margin-bottom: 40px;
+}
+.gamers-top .range-selector {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.gamers-top .range-selector .selectors {
+  display: flex;
+  gap: 10px;
+}
+.gamers-top .range-selector .selectors .gamers-search {
+  flex: 1;
+}
+.gamers-top .range-selector .selectors .gamers-search .gamers-form-search {
+  position: relative;
+}
+.gamers-top .range-selector .selectors .gamers-search .gamers-form-search .gamers-input-search {
+  padding: 13px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  background: none;
+  color: #fff;
+  width: 100%;
+}
+.gamers-top .range-selector .selectors .gamers-search .gamers-form-search .gamers-icon-search {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 13px;
+  right: 3px;
+  cursor: pointer;
+}
+.gamers-top .range-selector .selectors .select-imit {
+  position: relative;
+}
+.gamers-top .range-selector .selectors .select-imit .select-head {
+  padding: 13px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+.gamers-top .range-selector .selectors .select-imit .select-head .select-head-selected {
+  margin-right: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.gamers-top .range-selector .selectors .select-imit .select-head .select-head-icon {
+  display: block;
+  line-height: 0;
+}
+.gamers-top .range-selector .selectors .select-imit .select-head .select-head-icon svg path {
+  transition: 0.2s ease-out;
+  stroke: rgba(255, 255, 255, 0.2);
+}
+.gamers-top .range-selector .selectors .select-imit .select-head.active,
+.gamers-top .range-selector .selectors .select-imit .select-head:hover {
+  background: #007BFF;
+  border-color: #007BFF;
+}
+.gamers-top .range-selector .selectors .select-imit .select-head.active .select-head-icon svg path,
+.gamers-top .range-selector .selectors .select-imit .select-head:hover .select-head-icon svg path {
+  stroke: #fff;
+}
+.gamers-top .range-selector .selectors .select-imit .select-list {
+  background: #ADADAD;
+  color: #27282A;
+  padding: 10px 0;
+  border-radius: 0 0 4px 4px;
+  display: none;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: 100%;
+  min-width: 100%;
+  max-height: 207px;
+  overflow: auto;
+}
+.gamers-top .range-selector .selectors .select-imit .select-list .select-item {
+  padding: 3px;
+  text-align: center;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.gamers-top .range-selector .selectors .select-imit .select-list .select-item:hover {
+  background: #007BFF;
+  color: #fff;
+}
+.gamers-top .range-selector .selectors .select-imit:hover .select-head.active {
+  border-radius: 4px 4px 0 0;
+}
+.gamers-top .range-selector .buttons-wrapper {
+  display: flex;
+  gap: 4px;
+}
+.gamers-top .range-selector .buttons-wrapper button {
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 8%;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+.gamers-top .range-selector #applyBtn {
+  background-color: #fff;
+  color: #27282A;
+  transition: background-color 0.6s;
+}
+.gamers-top .range-selector #resetBtn {
+  transition: background-color 0.6s;
+}
+.gamers-top .range-selector #applyBtn:hover {
+  background-color: #007BFF;
+}
+.gamers-top .range-selector #resetBtn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.about-gamers {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 29px 30px;
+  width: 100%;
+}
+.about-gamers .table-container {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr 1fr 1fr;
+  width: 100%;
+}
+.about-gamers .table-container .header {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #979797;
+  border-bottom: 1px solid #F0F0F0;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+.about-gamers .table-container .cell {
+  border-bottom: 1px solid #F0F0F0;
+  padding: 16px;
+  font-family: PT Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+.about-gamers .table-container .center {
+  text-align: center;
+}
+.about-gamers .table-container .b-osipovich {
+  border: none;
+}
+.about-gamers .table-container .info-gamer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.about-gamers .table-container .gamer-img {
+  width: 46px;
+  height: 46px;
+}
+.about-gamers .table-container .gamer-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #151515;
+  min-width: 72px;
+}
+.about-gamers .table-container .teams {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.about-gamers .table-container .teams .team {
+  width: 36px;
+  height: 36px;
+  border: 3px solid #FFFFFF;
+  background-color: #F0F0F0;
+  border-radius: 50%;
+}
+.about-gamers .table-container .teams .team:hover {
+  border-color: #007BFF;
+}
+.about-gamers .table-container .teams .team:hover + .help {
+  display: block;
+}
+.about-gamers .table-container .image-help {
+  position: relative;
+  display: flex;
+}
+.about-gamers .table-container .image-help .help {
+  background-color: #007BFF;
+  width: 164px;
+  height: 34px;
+  padding: 8px 10px;
+  position: absolute;
+  color: #fff;
+  border-radius: 4px;
+  display: none;
+  left: 100%;
+  z-index: 1;
+}
+.about-gamers .table-container .image-help .help .help-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+.about-gamers .table-container .image-help .help .arrow {
+  color: #007BFF;
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  top: 38%;
+  left: -10px;
+}
+@media (max-width: 1399px) {
+  .about-gamers .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+@media (max-width: 1199px) {
+  .gamers-top .range-selector {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .gamers-top .range-selector .selectors .select-imit .select-head {
+    padding: 13px 50px;
+  }
+  .gamers-top .range-selector .selectors {
+    flex-wrap: wrap;
+  }
+  .gamers-top .range-selector .buttons-wrapper {
+    width: 100%;
+  }
+  .gamers-top .range-selector .buttons-wrapper button {
+    width: 50%;
+  }
+  .gamers-top .range-selector .selectors .select-imit {
+    width: 49%;
+  }
+}
+@media (max-width: 767px) {
+  .gamers-top .range-selector {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .gamers-top .range-selector .selectors {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .gamers-top .range-selector .buttons-wrapper {
+    display: flex;
+    gap: 4px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .gamers-top .range-selector .buttons-wrapper button {
+    width: 50%;
+  }
+  .gamers-top .range-selector .selectors .select-imit {
+    width: 100%;
+  }
+  .gamers-search {
+    width: 100%;
+  }
+  .gamers-input-search {
+    width: 100%;
+  }
+}
+.about-gamers .table-container .header-image {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.about-gamers .table-container .header-image .header-blue {
+  width: 11px;
+  height: 11px;
+}
+.about-gamers .table-container .header-image .header-blue:hover {
+  rotate: 180deg;
+}

@@ -1,0 +1,397 @@
+.gamer-table .card-wrapper {
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+}
+.gamer-table .card-wrapper .gamer-card,
+.gamer-table .card-wrapper .statistic {
+  margin-bottom: 44px;
+}
+.gamer-table .card-wrapper .gamer-card {
+  width: 50%;
+}
+.gamer-table .card-wrapper .gamer-card .home {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+.gamer-table .card-wrapper .gamer-card .home .text-home {
+  color: rgba(255, 255, 255, 0.6);
+}
+.gamer-table .card-wrapper .gamer-card .card {
+  background-color: rgba(238, 238, 238, 0.2);
+  padding: 30px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 90px;
+}
+.gamer-table .card-wrapper .gamer-card .card .image {
+  grid-row: span 2;
+}
+.gamer-table .card-wrapper .gamer-card .card .gamer-img {
+  display: flex;
+  gap: 30px;
+}
+.gamer-table .card-wrapper .gamer-card .card .gamer-img .name-parametrs,
+.gamer-table .card-wrapper .gamer-card .card .gamer-img .parametrs {
+  display: flex;
+  flex-direction: column;
+}
+.gamer-table .card-wrapper .gamer-card .card .gamer-img .name-parametrs {
+  margin-top: 43px;
+}
+.gamer-table .card-wrapper .gamer-card .card .gamer-img .name-parametrs .first-name,
+.gamer-table .card-wrapper .gamer-card .card .gamer-img .name-parametrs .last-name {
+  color: #F4F4F4;
+}
+.gamer-table .card-wrapper .gamer-card .card .gamer-img .parametrs {
+  margin-top: 30px;
+  display: flex;
+  gap: 4px;
+}
+.gamer-table .card-wrapper .gamer-card .card .gamer-img .parametrs .height,
+.gamer-table .card-wrapper .gamer-card .card .gamer-img .parametrs .weight {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  padding: 7px 20px;
+  color: #fff;
+}
+.gamer-table .card-wrapper .gamer-card .card .info-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-info,
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-link {
+  display: flex;
+  flex-direction: column;
+}
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-info {
+  gap: 12px;
+  min-width: 250px;
+}
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-info .flex {
+  display: flex;
+  gap: 8px;
+  align-items: end;
+}
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-info .flex .text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-info .flex .dots {
+  flex-grow: 1;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.1);
+  border-bottom-width: thin;
+}
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-info .flex .info {
+  color: #fff;
+}
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-info .flex .team-flex {
+  display: flex;
+  gap: 5px;
+}
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-info .flex .team-flex .team {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+}
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-link {
+  gap: 6px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: auto;
+}
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-link .khl,
+.gamer-table .card-wrapper .gamer-card .card .info-btn .gamer-link .mhl {
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+.gamer-table .card-wrapper .statistic .top {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px 0 30px;
+  margin-bottom: 0;
+}
+.gamer-table .card-wrapper .statistic .top .text {
+  font-size: 32px;
+  font-weight: 700;
+  color: #27282A;
+}
+.gamer-table .card-wrapper .statistic .top .glossary {
+  border: 1px solid rgba(151, 151, 151, 0.4);
+  border-radius: 4px;
+  background: none;
+  padding: 11px 22px;
+  display: flex;
+  gap: 6px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+.gamer-table .card-wrapper .statistic .top .glossary .text-right,
+.gamer-table .card-wrapper .statistic .top .glossary .glossary-image {
+  color: #979797;
+}
+.gamer-table .card-wrapper .statistic .top .glossary:hover {
+  border: 1px solid #007bff;
+  background-color: rgba(238, 238, 238, 0.05);
+}
+.gamer-table .card-wrapper .statistic .table-wrapper {
+  border-radius: 10px;
+  background-color: #fff;
+  margin-top: 53px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 30px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table td {
+  text-align: center;
+  font-size: 14px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table th {
+  color: #979797;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 10px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table .season {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 26px 0 6px 0;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  position: relative;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-icon {
+  transform: translateY(0.2em);
+  cursor: pointer;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-icon-regular {
+  left: 51.3%;
+  top: 19%;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-record {
+  opacity: 0;
+  position: absolute;
+  left: 28%;
+  top: 92%;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-record .arrow {
+  color: #fff;
+  top: -14px;
+  left: 4px;
+  width: 16px;
+  height: 10px;
+  position: absolute;
+  z-index: 1;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-record--two {
+  left: 54%;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-help {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 8px 15px;
+  position: absolute;
+  top: -26px;
+  left: 14px;
+  width: 156px;
+  max-height: 34px;
+  box-shadow: 0px 1px 5px 0px #00000040;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-help .info-card-text {
+  color: #27282A;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table .info-icon:hover {
+  color: #007BFF;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .stats-table .info-icon:hover + .info-card-record {
+  opacity: 1;
+  z-index: 10;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .small-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  color: #27282A;
+  margin-bottom: 15px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .small-text--last,
+.gamer-table .card-wrapper .statistic .table-wrapper .small-number--last {
+  margin-bottom: 7px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .small-number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .small-number--last {
+  margin-bottom: 7px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .third-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .third-last {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .third-text--last {
+  font-size: 18px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .bold-number {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.gamer-table .card-wrapper .statistic .table-wrapper .bold-number--last {
+  line-height: 24px;
+}
+.gamer-table .card-wrapper .statistic .stats-table td:first-child,
+.gamer-table .card-wrapper .statistic .stats-table th:first-child {
+  text-align: left;
+  min-width: 300px;
+}
+.gamer-table .card-wrapper .statistic .section-title {
+  font-size: 18px;
+  margin: 30px 0 10px;
+  font-weight: bold;
+}
+@media (max-width: 1199px) {
+  .gamer-table .card-wrapper {
+    flex-direction: column;
+  }
+  .gamer-table .card-wrapper .gamer-card {
+    width: 100%;
+  }
+  .gamer-table .card-wrapper .gamer-card .card {
+    flex-direction: row;
+  }
+  .gamer-table .card-wrapper .gamer-card .card .gamer-img {
+    align-items: center;
+  }
+  .gamer-table .card-wrapper .gamer-card .info-btn {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .gamer-table .card-wrapper .gamer-card .info-btn .gamer-link {
+    align-items: stretch;
+  }
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-record {
+    left: 20%;
+  }
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-record--two {
+    left: 38%;
+  }
+}
+@media (max-width: 991px) {
+  .gamer-table .card-wrapper .gamer-card {
+    margin-bottom: 0;
+  }
+  .gamer-table .card-wrapper .gamer-card .card .gamer-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gamer-table .card-wrapper .gamer-card .card .gamer-img .name-parametrs {
+    margin-top: 0;
+  }
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-record {
+    left: 24%;
+  }
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-record--two {
+    left: 50%;
+  }
+  .gamer-table .gamer-card .card {
+    align-items: center;
+  }
+  .gamer-table .gamer-card .gamer-info {
+    width: 100%;
+  }
+  .gamer-table .gamer-card .gamer-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-record {
+    left: 23%;
+  }
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-record--two {
+    left: 46%;
+  }
+  .gamer-table .card-wrapper .gamer-card .card {
+    flex-direction: column;
+    align-items: inherit;
+    gap: 30px;
+  }
+  .gamer-table .card-wrapper .gamer-card .card .gamer-img .name-parametrs {
+    gap: 10px;
+  }
+  .gamer-table .card-wrapper .gamer-card .card .gamer-img .parametrs .height,
+  .gamer-table .card-wrapper .gamer-card .card .gamer-img .parametrs .weight {
+    padding: 12px 10px;
+  }
+  .gamer-table .card-wrapper .statistic .top .glossary {
+    padding: 3px 13px;
+  }
+  .gamer-table .card-wrapper .statistic .top .text {
+    font-size: 20px;
+    text-align: center;
+  }
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table th:first-child {
+    min-width: 219px;
+  }
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .season,
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .third-text {
+    font-size: 14px;
+  }
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text,
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .small-number,
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table th,
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .third-last {
+    font-size: 12px;
+  }
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .bold-number {
+    font-size: 13px;
+  }
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .small-text {
+    font-size: 10px;
+  }
+  .gamer-table .card-wrapper .statistic .table-wrapper .stats-table .second-text .info-card-help {
+    padding: 4px 6px;
+    top: -23px;
+    left: 14px;
+  }
+}

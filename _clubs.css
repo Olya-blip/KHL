@@ -1,0 +1,324 @@
+.clubs-top {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.clubs-top .home {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+.clubs-top .home .text-home {
+  color: rgba(255, 255, 255, 0.6);
+}
+.clubs-top .title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #F6F6F6;
+}
+.clubs-top .range-selector {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.clubs-top .range-selector .selectors {
+  display: flex;
+  gap: 10px;
+}
+.clubs-top .range-selector .selectors .select-imit {
+  position: relative;
+}
+.clubs-top .range-selector .selectors .select-imit .select-head {
+  padding: 13px 90.5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+.clubs-top .range-selector .selectors .select-imit .select-head .select-head-selected {
+  margin-right: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.clubs-top .range-selector .selectors .select-imit .select-head .select-head-icon {
+  display: block;
+  line-height: 0;
+}
+.clubs-top .range-selector .selectors .select-imit .select-head .select-head-icon svg path {
+  transition: 0.2s ease-out;
+  stroke: rgba(255, 255, 255, 0.2);
+}
+.clubs-top .range-selector .selectors .select-imit .select-head.active,
+.clubs-top .range-selector .selectors .select-imit .select-head:hover {
+  background: #007BFF;
+  border-color: #007BFF;
+}
+.clubs-top .range-selector .selectors .select-imit .select-head.active .select-head-icon svg path,
+.clubs-top .range-selector .selectors .select-imit .select-head:hover .select-head-icon svg path {
+  stroke: #fff;
+}
+.clubs-top .range-selector .selectors .select-imit .select-list {
+  background: #fff;
+  color: #27282A;
+  padding: 10px 0;
+  border-radius: 0 0 4px 4px;
+  display: none;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: 100%;
+  min-width: 100%;
+  max-height: 207px;
+  overflow: auto;
+}
+.clubs-top .range-selector .selectors .select-imit .select-list .select-item {
+  padding: 3px;
+  text-align: center;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.clubs-top .range-selector .selectors .select-imit .select-list .select-item:hover {
+  background: #007BFF;
+  color: #fff;
+}
+.clubs-top .range-selector .selectors .select-imit:hover .select-head.active {
+  border-radius: 4px 4px 0 0;
+}
+.clubs-top .range-selector .buttons-wrapper {
+  display: flex;
+  gap: 4px;
+}
+.clubs-top .range-selector .buttons-wrapper button {
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 8%;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.clubs-top .range-selector .buttons-wrapper button[id="applyBtn"] {
+  background-color: #fff;
+  color: #27282A;
+  transition: background-color 0.6s;
+}
+.clubs-top .range-selector .buttons-wrapper button[id="applyBtn"]:hover {
+  background-color: #007BFF;
+}
+.clubs-top .range-selector .buttons-wrapper button[id="resetBtn"] {
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.6s;
+}
+.clubs-top .range-selector .buttons-wrapper button[id="resetBtn"]:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.clubs-cards {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border-radius: 6px;
+  grid-gap: 10px;
+}
+.clubs-cards .club-card {
+  text-decoration: none;
+}
+.clubs-cards .club-card .club-card-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 18px;
+  border-radius: 6px;
+  position: relative;
+  width: 163px;
+  height: 174px;
+}
+.clubs-cards .club-card .club-card-input .club-text {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 19px;
+}
+.clubs-cards .club-card .club-card-input .club-text .club-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+}
+.clubs-cards .club-card .club-card-input .club-text .club-city {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+}
+.clubs-cards .club-card .club-card-input .club-text--crystal {
+  margin-top: 10px;
+}
+.clubs-cards .club-card .club-card-input .info-icon {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: rgba(255, 255, 255, 0.6);
+}
+.clubs-cards .club-card .club-card-input .club-emblem--cska,
+.clubs-cards .club-card .club-card-input .club-emblem--cka,
+.clubs-cards .club-card .club-card-input .club-emblem--metallurgist,
+.clubs-cards .club-card .club-card-input .club-emblem--dinamo,
+.clubs-cards .club-card .club-card-input .club-emblem--burevistnic {
+  background-color: #EAEAEA;
+  border-radius: 50%;
+}
+.clubs-cards .club-card .club-card-input .club-card-info {
+  background-color: #F4F4F4;
+  padding: 13px;
+  border-radius: 6px;
+  position: absolute;
+  left: 166px;
+  top: 0px;
+  z-index: -10;
+  width: 173px;
+  min-height: 201px;
+  opacity: 0;
+}
+.clubs-cards .club-card .club-card-input .club-card-info .club-card-history {
+  color: #27282A;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+.clubs-cards .club-card .club-card-input .club-card-info .border-bottom {
+  border: 1px solid #AFAFAF66;
+  margin-bottom: 15px;
+}
+.clubs-cards .club-card .club-card-input .club-card-info .club-card-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.clubs-cards .club-card .club-card-input .club-card-info .club-card-item .club-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.clubs-cards .club-card .club-card-input .club-card-info .club-card-item .club-card-list .data {
+  color: #ADADAD;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+}
+.clubs-cards .club-card .club-card-input .club-card-info .club-card-item .club-card-list .club-name {
+  color: #27282A;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+}
+.clubs-cards .club-card .club-card-input:hover {
+  border: 1px solid #007BFF;
+  background-color: rgba(238, 238, 238, 0.1);
+}
+.clubs-cards .club-card .club-card-input:hover .info-icon {
+  color: #007BFF;
+}
+.clubs-cards .club-card .club-card-input:hover .club-card-info {
+  opacity: 1;
+  z-index: 10;
+}
+.clubs-cards img {
+  width: 50px;
+  height: 50px;
+}
+.clubs-cards .img-xs {
+  width: 34px;
+  height: 22px;
+  position: absolute;
+  left: -17px;
+  z-index: 9;
+  top: 4px;
+}
+@media (max-width: 1399px) {
+  .clubs-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .clubs-cards .club-card .club-card-input {
+    width: 100%;
+  }
+  .clubs-cards .club-card .club-card-input .club-card-info {
+    left: 289px;
+  }
+}
+@media (max-width: 1199px) {
+  .clubs-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .clubs-cards .club-card .club-card-input {
+    width: 100%;
+  }
+  .clubs-cards .club-card .club-card-input .club-card-info {
+    left: 226px;
+  }
+}
+@media (max-width: 991px) {
+  .clubs-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .clubs-cards .club-card .club-card-input .club-card-info {
+    width: 100%;
+    top: 178px;
+    left: 0;
+  }
+  .clubs-cards .club-card .img-xs {
+    top: -10px;
+    left: 150px;
+    rotate: 90deg;
+  }
+  .clubs-top .range-selector {
+    gap: 130px;
+  }
+  .clubs-top .range-selector .selectors .select-imit .select-head {
+    padding: 13px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .clubs-top .range-selector {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .clubs-top .range-selector .selectors {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .clubs-top .range-selector .buttons-wrapper {
+    display: flex;
+    gap: 4px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .clubs-top .range-selector .buttons-wrapper button {
+    width: 50%;
+  }
+  .clubs-cards {
+    grid-template-columns: 1fr;
+  }
+}
